@@ -18,11 +18,20 @@ Using Pandas, we read our csv file into a data frame - this will make our subseq
 ```
 ![dtypes](https://c2.staticflickr.com/6/5647/29871624951_76f01fd215_o.png)
 
-Using a data frame also allows us a broad overview of the numerical columns which includes common statistical measures - mean, standard deviation, minimum, maximum, as well as the quartiles:
+Using a data frame also allows us a broad overview of the numerical columns which covers common statistical measures - mean, standard deviation, minimum, maximum, as well as the quartiles:
 
 ```python
 	df.describe()
 ```
 
 ![describe-results](https://c1.staticflickr.com/9/8470/29327540804_7b0db47bdd_o.png)
+
+Using Seaborn, we can quickly plot each numerical column against the others - this is useful to observing the relationships between columns.
+
+```python
+import seaborn as sns
+sns.pairplot(df)
+```
+
+![pairplot](https://c2.staticflickr.com/6/5277/29920761866_c80e668102_o.png)
 
