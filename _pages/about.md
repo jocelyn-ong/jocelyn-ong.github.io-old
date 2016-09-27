@@ -2,7 +2,7 @@
 title: "About me"
 layout: single
 author_profile: true
-permalink: /about.html
+permalink: /about/
 ---
 
 Hello! I'm Jocelyn!

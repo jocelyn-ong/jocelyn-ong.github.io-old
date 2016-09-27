@@ -2,7 +2,7 @@
 title: "Posts"
 layout: archive
 author_profile: true
-permalink: /posts.html
+permalink: /year-archive/
 ---
 
 Hello 
