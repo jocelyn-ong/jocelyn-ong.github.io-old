@@ -1,6 +1,6 @@
 ---
 title: "About me"
-layout: archive
+layout: single
 author_profile: true
 permalink: /about.html
 ---
