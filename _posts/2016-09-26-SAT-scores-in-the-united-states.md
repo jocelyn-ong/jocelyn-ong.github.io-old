@@ -1,4 +1,4 @@
-Using a combination of Jupyter Notebook, Python and its various libraries, and Tableau we conduct a basic exploratory analysis of SAT scores in the United States.
+Using Python, its various libraries, and Tableau, we conduct a basic exploratory analysis of SAT scores in the United States.
 
 ## What is the data about
 ![sat-csv-table](https://c1.staticflickr.com/9/8448/29871624861_d2a968ba1c_o.png)
@@ -56,3 +56,14 @@ In addition to the pairplot, we can also observe the data distribution by geogra
 ![rate](https://c2.staticflickr.com/8/7775/29328746303_6c3f0e31dd_o.png)
 ![verbal](https://c2.staticflickr.com/6/5658/29661167260_03ca271475_o.png)
 ![math](https://c1.staticflickr.com/9/8817/29327831794_2208253997_o.png)
+
+Participation rates in the NorthEast region are amongst the highest, but lower than average mean scores are also observed. We would expect that the lower mean scores are as a result of high variance in the scores obtained by the numerous candidates in the area.
+
+In the MidWest, participation rates are low, but mean scores are amongst the highest. It is likely that the few candidates from the MidWest who did participate in the SAT examination did very well.
+
+Unfortunately, without the raw data of the scores obtained each candidate, we will not be able to verify these hypotheses.
+
+## Until next time
+This week, we've looked at how to use Pandas, Seaborn, and Tableau to do a cursory analysis and visualization of our dataset. This will help us determine what detailed analyses to be run on the dataset and whether additional information is required.
+
+I hope you enjoyed this post, and I look forward to bringing you more insights on data science.
