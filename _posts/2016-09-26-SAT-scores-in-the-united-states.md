@@ -43,9 +43,9 @@ sns.pairplot(df)
 ![pairplot](https://c2.staticflickr.com/6/5277/29920761866_c80e668102_o.png)
 
 Based on the pairplot:  
-* Verbal scores and Math scores are positively correlated
-* Participation rate and Verbal scores seem to be negatively correlated
-* Participation rate and Verbal scores seem to be negatively correlated
+* Verbal scores and Math scores are positively correlated  
+* Participation rate and Verbal scores seem to be negatively correlated  
+* Participation rate and Verbal scores seem to be negatively correlated  
 * The relationship between Verbal scores and Math scores are strong than the relationship between Participation Rate and either of the scores
 
 ### Tableau
