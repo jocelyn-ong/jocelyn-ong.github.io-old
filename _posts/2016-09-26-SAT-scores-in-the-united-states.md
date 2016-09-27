@@ -4,7 +4,7 @@ Using a combination of Jupyter Notebook, Python and its various libraries, we co
 
 The data in the csv file is described as follows:
 
-![](data-dictionary)
+![data-dictionary](https://c1.staticflickr.com/9/8075/29327540764_a977c1044d_o.png)
 
 ```python
 	import pandas as pd
@@ -16,7 +16,7 @@ Using Pandas, we read our csv file into a data frame - this will make our subseq
 ```python
 	df.dtypes
 ```
-![](dtypes)
+![dtypes](https://c2.staticflickr.com/6/5647/29871624951_76f01fd215_o.png)
 
 Using a data frame also allows us a broad overview of the numerical columns which includes common statistical measures - mean, standard deviation, minimum, maximum, as well as the quartiles:
 
@@ -24,5 +24,5 @@ Using a data frame also allows us a broad overview of the numerical columns whic
 	df.describe()
 ```
 
-![](describe)
+![describe-results](https://c1.staticflickr.com/9/8470/29327540804_7b0db47bdd_o.png)
 
