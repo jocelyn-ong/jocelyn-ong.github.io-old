@@ -77,30 +77,30 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jocelyn Ong"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Aspiring data scientist"
+  location         : "New York City"
+  email            : "ongjoce@gmail.com"
   uri              :
   bitbucket        :
-  codepen          :
+  codepen          : 
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "jocelyn-ong"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "jocelyn-ong-06488a5b"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "joce_ong"
   vine             :
   weibo            :
   xing             :
