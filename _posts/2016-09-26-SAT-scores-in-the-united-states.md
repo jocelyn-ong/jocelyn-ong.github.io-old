@@ -43,10 +43,12 @@ sns.pairplot(df)
 ![pairplot](https://c2.staticflickr.com/6/5277/29920761866_c80e668102_o.png)
 
 Based on the pairplot:  
-- Verbal scores and Math scores are positively correlated  
-- Participation rate and Verbal scores seem to be negatively correlated  
-- Participation rate and Verbal scores seem to be negatively correlated  
-- The relationship between Verbal scores and Math scores are strong than the relationship between Participation Rate and either of the scores
+<ul>
+	<li>Verbal scores and Math scores are positively correlated</li>
+	<li>Participation rate and Verbal scores seem to be negatively correlated</li>
+	<li>Participation rate and Verbal scores seem to be negatively correlated</li>
+	<li>The relationship between Verbal scores and Math scores are strong than the relationship between Participation Rate and either of the scores</li>
+</ul>
 
 ### Tableau
 In addition to the pairplot, we can also observe the data distribution by geographical region on Tableau.
