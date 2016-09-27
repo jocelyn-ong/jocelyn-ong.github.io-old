@@ -67,3 +67,5 @@ Unfortunately, without the raw data of the scores obtained each candidate, we wi
 This week, we've looked at how to use Pandas, Seaborn, and Tableau to do a cursory analysis and visualization of our dataset. This will help us determine what detailed analyses to be run on the dataset and whether additional information is required.
 
 I hope you enjoyed this post, and I look forward to bringing you more insights on data science.
+
+p.s. you can view my notebook on [Github](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-01/starter-code/project_1_jocelyn_ong.ipynb)
