@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /year-archive/
-title: "All posts"
+title: "Posts by Year"
 author_profile: true
 ---
 
