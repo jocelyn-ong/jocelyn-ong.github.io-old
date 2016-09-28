@@ -7,6 +7,11 @@ The data in the csv file is described as follows:
 
 ![data-dictionary](https://c1.staticflickr.com/9/8075/29327540764_a977c1044d_o.png)
 
+### What we want to do
+We would like to see what the data can tell us about SAT scores and the proportion of people in each state who attempt the SAT.
+
+We could also if there is any correlation between any of the data - if there is, such data could be used for prediction purposes. For example, if verbal scores and math scores are highly correlated, we may be able to predict the mean verbal score of a state when we are given just the mean math score.
+
 ## Reading the data
 ```python
 import pandas as pd
