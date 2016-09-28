@@ -55,7 +55,7 @@ In addition to the pairplot, we can also observe the data distribution by geogra
 
 ![rate](https://c2.staticflickr.com/8/7775/29328746303_6c3f0e31dd_o.png)
 ![verbal](https://c2.staticflickr.com/6/5658/29661167260_03ca271475_o.png)
-![math](https://raw.githubusercontent.com/jocelyn-ong/ga-dsi/master/projects/projects-weekly/project-01/starter-code/images/Math.png)
+![math](https://c1.staticflickr.com/9/8817/29327831794_2208253997_o.png)
 
 Participation rates in the NorthEast region are amongst the highest, but lower than average mean scores are also observed. We would expect that the lower mean scores are as a result of high variance in the scores obtained by the numerous candidates in the area.
 
