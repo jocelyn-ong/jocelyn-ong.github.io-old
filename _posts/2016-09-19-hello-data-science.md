@@ -6,7 +6,7 @@ I first became interested in data when I attended a talk - "Opportunities in Dat
 I found that General Assembly had a part-time Data Science course and I thought, "I should just jump in and find out for myself!" That was 6 months ago in March 2016, and I took the course in New York because Singapore didn't have the course yet.
 
 ## Fast forward 6 months
-I got through the part-time course and I enjoyed it immensely. I learned a lot, but I wanted more. Since I was taking a break from work and had time on my hands, I figured I would take the Data Science Immersive to gain a more in depth view and knowledge of the field (hopefully).
+I got through the part-time course and I enjoyed it immensely. I learned a lot, but I wanted more. Since I was taking a break from work and had time on my hands, I figured I would take the Data Science Immersive to gain a more in-depth view and knowledge of the field (hopefully).
 
 This blog was born out of the project requirements of the Immersive, but I hope to keep it running and I hope to post more than just my projects from the Immersive.
 
