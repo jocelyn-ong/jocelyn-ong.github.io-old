@@ -125,7 +125,7 @@ for i in range(trials):
     diff = np.median(bottom) - np.median(top)
     if diff >= 8:
         counter += 1.0
-print counter/trials
+print 'p-value: {}%'.format((counter/trials)*100)
 ```
 
 Running the above a couple of times, the probability that we get back is very small, much smaller than 5%. Hence, we can reject the hypothesis that there is no relationship between rank entered and whether a track will reach the top 10 (i.e. the two are related - if Track A comes into the Hot 100 at a higher rank than Track B, there is a higher chance of A being in the top 10 than B).
