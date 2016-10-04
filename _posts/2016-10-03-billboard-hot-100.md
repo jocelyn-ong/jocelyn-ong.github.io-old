@@ -80,10 +80,7 @@ We can see from the pairplot that no matter what the ranks were coming into the 
 
 To test our problem statement, we should see if there is any difference between the average entering rank of tracks that hit the top 10 and tracks that do not. We will use median as our measure of average so that the result is not too highly skewed by outliers.
 
-To be a little more specific, the hypothesis we're testing is:
-
-$$H_0:\ Top\ 10\ tracks\ have\ the\ same\ median\ rank\ entering\ the\ Hot\ 100\ as\ non-Top\ 10\ tracks.$$
-
+To be a little more specific, our null hypothesis is that top 10 tracks have the median rank entering the Hot 100 as non-top 10 tracks.
 
 ```python
 df2['rank_entered'][df2['reached_top_10']\
