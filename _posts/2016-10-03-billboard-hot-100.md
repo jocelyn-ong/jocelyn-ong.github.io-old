@@ -98,30 +98,17 @@ To do this, we randomize the data for the ranks entering the Hot 100, and assign
 We'll set our significance level at 5%: if the probability of getting a difference of at least 8 is less than 5%, then there is a relationship between the rank a track entered the Hot 100 and whether it reaches a top 10 position.
 
 ```python
-trials = 10000
+trials = 100000
 counter = 0
-t1 = df['rank_entered']
-top_L = df['track'][df['reached_top_10'] == True].count()
-bottom_L = len(df2)-top_L
+t1 = df2['rank_entered']
+top_L = df2['track'][df2['reached_top_10'] == True].count()
 for i in range(trials):
     t2 = np.random.permutation(t1)
-    top = []
-    bottom = []
-    for j in t2:
-        x = np.random.randint(2,size=1)
-        if x == 0:
-            if len(top) < top_L:
-                top.append(j)
-            else:
-                bottom.append(j)
-        if x == 1:
-            if len(bottom) < bottom_L:
-                bottom.append(j)
-            else:
-                top.append(j)
+    top = t2[:top_L]
+    bottom = t2[top_L:]
     diff = np.median(bottom) - np.median(top)
     if diff >= 8:
-        counter += 1.0
+        counter += 1.0000
 print 'p-value: {}%'.format((counter/trials)*100)
 ```
 
