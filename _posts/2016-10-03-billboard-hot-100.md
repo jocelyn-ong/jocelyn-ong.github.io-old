@@ -26,7 +26,8 @@ The dataset includes the artist's name, track name, track length, genre, the dat
 
 This week in class, we learned about defining a problem statement or a hypothesis. In layman terms, a problem statement or a hypothesis is a statement which you want to prove is true (or disprove).
 
-**Problem Statement: Does the rank at which a track enters the Hot 100 have any relation to whether or not it will eventually reach the top 10?**
+1. Does the rank at which a track enters the top 100 have any relation to whether it will eventually reach the top 10?
+2. Does the length of a track have any relation to its highest rank attainable?
 
 ## Exploratory data analysis (EDA)
 
@@ -66,9 +67,11 @@ What we can tell from the above:
 - 'weeks_on_billboard' has a minimum value of 1
     - There are track(s) which were only in the top 100 for a week
 
-## Problem Statement: Does the rank at which a track enters the Hot 100 have any relation to whether or not it will eventually reach the top 10?
+## Going back to what we wanted to find out
 
-Our problem statement seems to require just two subsets of data from the dataset: the highest rank obtained by each track and the rank which the track entered. Let's plot these two sets of data to see if there are any immediately discernible patterns.
+### Does the rank at which a track enters the Hot 100 have any relation to whether or not it will eventually reach the top 10?
+
+This problem statement seems to require just two subsets of data from the dataset: the highest rank obtained by each track and the rank which the track entered. Let's plot these two sets of data to see if there are any immediately discernible patterns.
 
 ```python
 sns.pairplot(df,x_vars='rank_entered', y_vars='highest_rank', size=5);
@@ -115,6 +118,16 @@ print 'p-value: {}%'.format((counter/trials)*100)
 Running the above a couple of times, the probability that we get back is very small, much smaller than 5%. Hence, we can reject the hypothesis that there is no relationship between rank entered and whether a track will reach the top 10 (i.e. the two are related - if Track A comes into the Hot 100 at a higher rank than Track B, there is a higher chance of A being in the top 10 than B).
 
 However, it is not immediately clear how the two are related (whether one can be predicted from the other, or how closely they are related). More data may be required to determine this.
+
+### Does the length of a track have any relation to its highest rank attainable?
+
+This problem statement is actually similar to the one above. In this instance, our null hypothesis is that the length of a track has no relation to its highest rank.
+
+To test this, we grouped our data into two groups - long tracks and short tracks. How you would define whether a track was long or short is purely arbitrary - we defined a long track as one that is longer than 250 seconds.
+
+We found that the median highest rank of the short tracks was 9 ranks better than the median highest rank of the long tracks. Again, due to the small sample size, we used the [permutation test](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=permutation+testing){:target="_blank"} to find out the probability of getting this result if we assumed that the null hypothesis is true (i.e. length of a track had no relation to its highest rank).
+
+We returned a very low probability of that - i.e. we reject the null hypothesis and say that shorter tracks do indeed tend to rank higher on the Hot 100!
 
 ## Looking at other possible factors using Tableau
 
