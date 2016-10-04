@@ -71,8 +71,7 @@ What we can tell from the above:
 Our problem statement seems to require just two subsets of data from the dataset: the highest rank obtained by each track and the rank which the track entered. Let's plot these two sets of data to see if there are any immediately discernible patterns.
 
 ```python
-sns.pairplot(df,x_vars='rank_entered',\
- y_vars='highest_rank', size=5);
+sns.pairplot(df,x_vars='rank_entered', y_vars='highest_rank', size=5);
 ```
 ![pairplot](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/pairplot.png?raw=true)
 
@@ -83,9 +82,7 @@ To test our problem statement, we should see if there is any difference between 
 To be a little more specific, our null hypothesis is that top 10 tracks have the same median rank entering the Hot 100 as non-top 10 tracks.
 
 ```python
-df2['rank_entered'][df2['reached_top_10']\
- == False].median() - df2['rank_entered'][df2['reached_top_10'] \
- == True].median()
+df2['rank_entered'][df2['reached_top_10'] == False].median() - df2['rank_entered'][df2['reached_top_10'] == True].median()
 ```
 
 The above returns a value of 8.5.
