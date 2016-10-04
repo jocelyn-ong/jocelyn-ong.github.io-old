@@ -26,7 +26,7 @@ The dataset includes the artist's name, track name, track length, genre, the dat
 
 This week in class, we learned about defining a problem statement or a hypothesis. In layman terms, a problem statement or a hypothesis is a statement which you want to prove is true (or disprove).
 
-**Problem Statement: Does the rank at which a track enter the Hot 100 have any relation to whether or not it will eventually reach the top 10?**
+**Problem Statement: Does the rank at which a track enters the Hot 100 have any relation to whether or not it will eventually reach the top 10?**
 
 ## Exploratory data analysis (EDA)
 
@@ -34,7 +34,7 @@ Before we dive into the problem statement, we should take a look at the dataset 
 
 ![original-dataset](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/original-dataset.png?raw=true)
 
-The original dataset has 317 entries of the tracks which were in the Hot 100 in the year 2012.
+The original dataset has 317 entries of the tracks which were in the Hot 100 in the year 2000.
 
 In the weeks where a track was no longer in the Hot 100, the value is passed as an asterisk (*). To facilitate our EDA, we'll tell pandas to treat asterisks as null values.
 
@@ -50,7 +50,7 @@ From the 'date.entered' and 'date.peaked' columns, we can find out how many week
 
 Here's a snapshot of our cleaned dataset:
 
-![billboards2](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/clean-data.png)
+![billboards2](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/clean-data.png?raw=true)
 
 ## Statistics of our dataset
 ![describe-results](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/describe-results.png?raw=true)
@@ -58,7 +58,7 @@ Here's a snapshot of our cleaned dataset:
 What we can tell from the above:
 
 - 'weeks_to_peak' has a minimum value of 0
-    - There are tracks which hit their highest rank the moment they got into top 100
+    - There are track(s) which hit their highest rank the moment they got into top 100
 - 'weeks_to_peak' has a median value of 7
     - On average, it takes a track 7 weeks to hit its highest rank
 - 'weeks_on_billboard' has a median value of 18
@@ -66,12 +66,13 @@ What we can tell from the above:
 - 'weeks_on_billboard' has a minimum value of 1
     - There are track(s) which were only in the top 100 for a week
 
-## Problem Statement: Does the rank at which a track enter the Hot 100 have any relation to whether or not it will eventually reach the top 10?
+## Problem Statement: Does the rank at which a track enters the Hot 100 have any relation to whether or not it will eventually reach the top 10?
 
-Our problem statement seems to require just two sets of data from the dataset: the highest rank obtained by each track and the rank which the track entered. Let's plot these two sets of data to see if there are any immediately discernible patterns.
+Our problem statement seems to require just two subsets of data from the dataset: the highest rank obtained by each track and the rank which the track entered. Let's plot these two sets of data to see if there are any immediately discernible patterns.
 
 ```python
-sns.pairplot(df,x_vars='rank_entered', y_vars='highest_rank', size=5);
+sns.pairplot(df,x_vars='rank_entered',\
+ y_vars='highest_rank', size=5);
 ```
 ![pairplot](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/pairplot.png?raw=true)
 
@@ -80,12 +81,16 @@ We can see from the pairplot that no matter what the ranks were coming into the 
 To test our problem statement, we should see if there is any difference between the average entering rank of tracks that hit the top 10 and tracks that do not. We will use median as our measure of average so that the result is not too highly skewed by outliers.
 
 ```python
-df2['rank_entered'][df2['reached_top_10'] == False].median() - df2['rank_entered'][df2['reached_top_10'] == True].median()
+df2['rank_entered'][df2['reached_top_10']\
+ == False].median() - df2['rank_entered'][df2['reached_top_10'] \
+ == True].median()
 ```
+
+The above returns a value of 8.5.
 
 Our dataset shows that the average entering rank of tracks which become top 10 hits is at least 8 ranks above those which do not make the top 10. However, since our dataset is small, this may not be a conclusive finding.
 
-In the absence of a bigger dataset for the same year (i.e. 2012), we'll use a [permutation test](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=permutation+testing){:target="_blank"} to find the probability of getting a difference of 8 or more ranks between top 10 tracks and non-top 10 tracks.
+In the absence of a bigger dataset for the same year (i.e. 2000), we'll use a [permutation test](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=permutation+testing){:target="_blank"} to find the probability of getting a difference of 8 or more ranks between top 10 tracks and non-top 10 tracks.
 
 In this [permutation test](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=permutation+testing){:target="_blank"}, we are treating the data as if the rank at which a track enters the Hot 100 has no relation to whether it gets into the top 10 eventually.
 
@@ -133,9 +138,9 @@ Let's take a look at the data using Tableau!
 
 Using Tableau, we can add in additional dimensions to our plot. In the above, we've included the season which a track entered the Hot 100 and the number of weeks it spent on the Hot 100.
 
-Just looking at it visually, we can see that there aren't many tracks which were on the Hot 100 for a short period of time that made it to the top 10 (the smaller circles tend to be more to the right of the chart).
+Just looking at it visually, we can see that there aren't many tracks which were on the Hot 100 for a short period of time that were in the top 10 (the smaller circles tend to be more to the right of the chart).
 
-The seasons are not as obvious, but it does seem like there's more yellow and blue on the left side of the chart (tracks which enter the Hot 100 in Spring and Fall are more likely to have made it to the top 10).
+It's not as obvious for seasons, but it does seem like there's more yellow and blue on the left side of the chart (tracks which enter the Hot 100 in Spring and Fall are more likely to have made it to the top 10).
 
 Again, we can't tell much about the data, except that there might be some correlation.
 
