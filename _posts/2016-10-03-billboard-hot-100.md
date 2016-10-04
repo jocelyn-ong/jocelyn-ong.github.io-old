@@ -84,6 +84,7 @@ To be a little more specific, the hypothesis we're testing is:
 
 $$H_0:\ Top\ 10\ tracks\ have\ the\ same\ median\ rank\ entering\ the\ Hot\ 100\ as\ non-Top\ 10\ tracks.$$
 
+
 ```python
 df2['rank_entered'][df2['reached_top_10']\
  == False].median() - df2['rank_entered'][df2['reached_top_10'] \
