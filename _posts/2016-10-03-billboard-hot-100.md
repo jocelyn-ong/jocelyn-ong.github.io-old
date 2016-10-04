@@ -88,7 +88,7 @@ To be a little more specific, our null hypothesis is that top 10 tracks have the
 df2['rank_entered'][df2['reached_top_10'] == False].median() - df2['rank_entered'][df2['reached_top_10'] == True].median()
 ```
 
-The above returns a value of 8.5.
+The above returns a value of about 8.
 
 Our dataset shows that the average entering rank of tracks which become top 10 hits is at least 8 ranks above those which do not make the top 10. However, since our dataset is small, this may not be a conclusive finding.
 
