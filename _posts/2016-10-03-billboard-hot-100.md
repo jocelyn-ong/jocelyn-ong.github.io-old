@@ -123,11 +123,15 @@ However, it is not immediately clear how the two are related (whether one can be
 
 This problem statement is actually similar to the one above. In this instance, our null hypothesis is that the length of a track has no relation to its highest rank.
 
-To test this, we grouped our data into two groups - long tracks and short tracks. How you would define whether a track was long or short is purely arbitrary - we defined a long track as one that is longer than 250 seconds.
+Let's first take a look at the distribution of the data:
 
-We found that the median highest rank of the short tracks was 9 ranks better than the median highest rank of the long tracks. Again, due to the small sample size, we used the [permutation test](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=permutation+testing){:target="_blank"} to find out the probability of getting this result if we assumed that the null hypothesis is true (i.e. length of a track had no relation to its highest rank).
+![length-rank](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/length-rank.png?raw=true)
 
-We returned a very low probability of that - i.e. we reject the null hypothesis and say that shorter tracks do indeed tend to rank higher on the Hot 100!
+To test this, we grouped our data into two groups - long tracks and short tracks. How youwould define whether a track was long or short is purely arbitrary - we defined a long track as one that is longer than 300 seconds.
+
+We found that the median highest rank of the short tracks was 8 ranks better than the median highest rank of the long tracks. Again, due to the small sample size, we used the [permutation test](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=permutation+testing){:target="_blank"} to find out the probability of getting this result if we assumed that the null hypothesis is true (i.e. length of a track had no relation to its highest rank).
+
+We returned a very high probability of that (almost 30%) - i.e. we do not reject the null hypothesis and say that it seems like track length and highest rank are not related!
 
 ## Looking at other possible factors using Tableau
 
