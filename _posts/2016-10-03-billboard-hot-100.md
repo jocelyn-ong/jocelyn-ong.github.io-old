@@ -5,15 +5,15 @@ As someone who doesn't listen much to anything apart from 'classical' music, I d
 
 I had to read quite a few articles and links on the Billboard Hot 100 before I could figure out how the data worked. Here's the gist of it:
 
-From [Wikipedia](https://en.wikipedia.org/wiki/Billboard_Hot_100)
+From [Wikipedia](https://en.wikipedia.org/wiki/Billboard_Hot_100){:target='_blank'}
 
 > The Billboard Hot 100 is the music industry standard record chart in the United States for singles, published weekly by Billboard magazine. **Chart rankings are based on radio play, online streaming, and sales (physical and digital).**
 
-Also [here](http://pitchfork.com/features/article/9378-i-know-you-got-soul-the-trouble-with-billboards-rbhip-hop-chart/)
+Also [here](http://pitchfork.com/features/article/9378-i-know-you-got-soul-the-trouble-with-billboards-rbhip-hop-chart/){:target='_blank'}
 
 > Ideally, any effective genre chart—be it R&B, Latin, country, even alt-rock—doesn’t just track a particular strain of music, which can be marked by ever-changing boundaries and ultimately impossible to define. It’s meant to track an audience.
 
-Another from [Wikipedia](https://en.wikipedia.org/wiki/Billboard_charts)
+Another from [Wikipedia](https://en.wikipedia.org/wiki/Billboard_charts){:target='_blank'}
 
 > What separates the charts is which stations and stores are used; each musical genre has a core audience or retail group. Each genre's department at Billboard is headed up by a chart manager, who makes these determinations.
 
@@ -149,4 +149,4 @@ This week, we looked at how to clean data to get it ready for analysis and how t
 
 I hope you enjoyed this post, and I look forward to bringing you more insights on data science.
 
-p.s. you can view my notebook for this project on [Github](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/project_two_jocelyn_ong.ipynb)
+p.s. you can view my notebook for this project on [Github](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/project_two_jocelyn_ong.ipynb){:target='_blank'}
