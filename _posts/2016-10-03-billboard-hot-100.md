@@ -131,9 +131,9 @@ To test this, we grouped our data into two groups - long tracks and short tracks
 
 We found that the median highest rank of the short tracks was 9 ranks better than the median highest rank of the long tracks. Again, due to the small sample size, we used the [permutation test](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=permutation+testing){:target="_blank"} to find out the probability of getting this result if we assumed that the null hypothesis is true (i.e. length of a track had no relation to its highest rank).
 
-We returned a very high probability of that (almost 14%) - i.e. we do not reject the null hypothesis and say that it seems like track length and highest rank are not related!
+We returned a very high probability of that (almost 14%) - i.e. we do not reject the null hypothesis. It seems like track length and highest rank are not related!
 
-## Looking at other possible factors using Tableau
+## Looking at other possible factors that affect the highest rank
 
 Let's take a look at the data using Tableau!
 
