@@ -23,6 +23,7 @@ On a side note, the slightly filtered version can be found [here version](https:
 ### What's in the data
 According to [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3tr-qhgy){:target:'_blank'}:
 >This dataset contains the spirits purchase information of Iowa Class “E” liquor licensees by product and date of purchase
+
 >Class E liquor license, for grocery stores, liquor stores, convenience stores, etc., allows commercial establishments to sell liquor for off-premises consumption in original unopened containers.
 
 |Column name |Data type |Description |
