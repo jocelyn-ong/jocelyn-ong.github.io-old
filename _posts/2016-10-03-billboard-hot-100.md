@@ -1,3 +1,7 @@
+---
+tags:
+  - DSI
+---
 What can we tell about the songs on the Billboard Hot 100?
 
 ## What is the data about
