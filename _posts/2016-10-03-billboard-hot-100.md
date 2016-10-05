@@ -17,7 +17,7 @@ Another from [Wikipedia](https://en.wikipedia.org/wiki/Billboard_charts){:target
 
 > What separates the charts is which stations and stores are used; each musical genre has a core audience or retail group. Each genre's department at Billboard is headed up by a chart manager, who makes these determinations.
 
-Essentially, the Billboard Hot 100 is is list of singles that are ranked in the top 100 by radio play, online streaming and sales; the genre that the song is listed under is determined by its audience and not by its artist.
+Essentially, the Billboard Hot 100 is a list of tracks that are ranked in the top 100 by radio play, online streaming and sales; the genre that the song is listed under is determined by its audience and not by its artist.
 
 ## What's in the data
 The dataset includes the artist's name, track name, track length, genre, the date it entered the Hot 100, the date it reached its highest rank on the Hot 100, and its rank on the Hot 100 for a period of 75 weeks starting from the week it entered (each week is represented as one column). 
