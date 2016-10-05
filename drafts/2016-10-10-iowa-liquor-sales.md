@@ -7,10 +7,10 @@ tags:
 Tagline: 1-liner summary of this post
 
 ## Introduction
-- origins of the project, reason for doing the project
-This is Project 3 from the Immersive and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](jpfreeley.github.io) and [Joshua]().
+This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](jpfreeley.github.io) and [Joshua]().
 
 This week, we'll be looking at the data from a market research perspective:
+
 > A liquor store owner in Iowa is looking to expand to new locations and has hired you to investigate the market data for potential new locations. The business owner is interested in the details of the best model you can fit to the data so that his team can evaluate potential locations for a new storefront.
 
 ## About the dataset
@@ -22,7 +22,8 @@ On a side note, the slightly filtered version can be found [here version](https:
 
 ### What's in the data
 According to [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3tr-qhgy){:target:'_blank'}:
->This dataset contains the spirits purchase information of Iowa Class “E” liquor licensees by product and date of purchase
+
+>This dataset contains the spirits purchase information of Iowa Class “E” liquor licensees by product and date of purchase...
 
 >Class E liquor license, for grocery stores, liquor stores, convenience stores, etc., allows commercial establishments to sell liquor for off-premises consumption in original unopened containers.
 
