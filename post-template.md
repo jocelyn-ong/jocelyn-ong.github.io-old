@@ -2,6 +2,7 @@
 tags:
   - DSI
 ---
+{% include toc %}
 Tagline: 1-liner summary of this post
 
 ## Introduction

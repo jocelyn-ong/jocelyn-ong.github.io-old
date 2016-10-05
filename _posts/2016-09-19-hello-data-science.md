@@ -1,4 +1,3 @@
-{% include toc %}
 This is where I start my journey into the world of data.
 
 ## Not true
