@@ -13,6 +13,8 @@ Tagline: 1-liner summary of this post
 ### How did we obtain it
 ### Description of the data (data dictionary)
 
+## What do we want to do
+
 ## Data munging/ data wrangling
 - Methods used
 - Code?

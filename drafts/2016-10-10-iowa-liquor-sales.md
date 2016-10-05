@@ -2,6 +2,7 @@
 tags:
   - DSI
   - collaboration
+  - projects
 ---
 {% include toc %}
 Tagline: 1-liner summary of this post
@@ -9,7 +10,7 @@ Tagline: 1-liner summary of this post
 ## Introduction
 This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](jpfreeley.github.io) and [Joshua]().
 
-This week, we'll be looking at the data from a market research perspective:
+For our project, we'll be looking at the data from a market research perspective:
 
 > A liquor store owner in Iowa is looking to expand to new locations and has hired you to investigate the market data for potential new locations. The business owner is interested in the details of the best model you can fit to the data so that his team can evaluate potential locations for a new storefront.
 
@@ -29,8 +30,8 @@ According to [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3t
 
 |Column name |Data type |Description |
 |---|---|---|
-|Date |String |Date of order |
-|Store Number |Integer | Unique order assigned to each store |
+|Date |String |Date of liquor order |
+|Store Number |Integer | Unique number assigned to each store |
 |City |String |City where the store is located |
 |Zip Code |String |Zip code where the store is located |
 |County Number |Float |Iowa county number for the county where the store is located |
@@ -47,6 +48,15 @@ According to [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3t
 |Sale (Dollars) |String |Total cost of liquor order (number of bottles multiplied by the state bottle retail) |
 |Volume Sold (Liters) |Float |Total volume of liquor ordered in liters (i.e. (Bottle Volume (ml) x Bottles Sold)/1,000) |
 |Volume Sold (Gallons) |Float |Total volume of liquor ordered in gallons (i.e. (Bottle Volume (ml) x Bottles Sold)/3785.411784) |
+
+## What do we want to do
+To recap, we want to use the data to help a liquor store owner decide where are the best locations for a new storefront.
+
+To do this, we would want to know:
+
+- Annual sales volume (number of bottles) by location
+- Monthly sales volume by location
+- Liquor cost by location
 
 ## Data munging/ data wrangling
 - Methods used
