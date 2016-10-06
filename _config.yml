@@ -18,7 +18,7 @@ teaser                   : # filename of teaser fallback teaser image placed in 
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -82,9 +82,9 @@ author:
   bio              : "Aspiring data scientist"
   location         : "New York City"
   email            : "ongjoce@gmail.com"
-  uri              : 
+  uri              :
   bitbucket        :
-  codepen          : 
+  codepen          :
   dribbble         :
   flickr           :
   facebook         :
@@ -94,7 +94,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "jocelyn-ong-06488a5b"
+  linkedin         : "jocelyn-ong-wj"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
