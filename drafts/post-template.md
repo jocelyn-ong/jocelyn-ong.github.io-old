@@ -20,6 +20,8 @@ Tagline: 1-liner summary of this post
 - Code?
 - Go column by column
 
+[![alt]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)
+
 ## Modeling: generating the model and drawing conclusions
 
 ## Round up

@@ -8,6 +8,8 @@ Using Python, its various libraries, and Tableau, we conduct a basic exploratory
 ## What is the data about
 ![sat-csv-table](https://c1.staticflickr.com/9/8448/29871624861_d2a968ba1c_o.png)
 
+[![sat-csv-table]({{ site.url }}{{ site.baseurl }}/images/sat_scores/sat-csv-table.png)]({{ site.url }}{{ site.baseurl }}/images/sat_scores/sat-csv-table.png)
+
 The data in the csv file is described as follows:
 
 ![data-dictionary](https://c1.staticflickr.com/9/8075/29327540764_a977c1044d_o.png)
