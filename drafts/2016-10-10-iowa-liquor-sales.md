@@ -17,7 +17,7 @@ For our project, we'll be looking at the data from a market research perspective
 ## About the dataset
 
 ### How we obtained the data
-The dataset we'll be using can be downloaded directly from the [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3tr-qhgy){:target:'_blank'} website. It's a large dataset and to facilitate working with the data, we'll be looking at this [dataset](https://drive.google.com/file/d/0Bx2SHQGVqWaseDB4QU9ZSVFDY2M/view?usp=sharing){:target='_blank'}, which is 10% of a filtered version of the original dataset. 
+The dataset we'll be using can be downloaded directly from the [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3tr-qhgy){:target:'_blank'} website. It's a large dataset and to facilitate working with the data, we'll be looking at this [dataset](https://drive.google.com/file/d/0Bx2SHQGVqWaseDB4QU9ZSVFDY2M/view?usp=sharing){:target='_blank'}, which is 10% of a filtered version of the original dataset.
 
 On a side note, the slightly filtered version can be found [here version](https://www.dropbox.com/sh/pf5n5sgfgiri3i8/AACkaMeL_i_WgZ00rpxOOcysa?dl=0){:target='_blank'}.
 
@@ -65,6 +65,7 @@ To do this, we would want to know:
 - Methods used
 - Code?
 - Go column by column
+[![alt]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)
 
 ## Modeling: generating the model and drawing conclusions
 
