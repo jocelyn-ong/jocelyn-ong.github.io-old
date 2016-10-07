@@ -6,13 +6,11 @@ tags:
 Using Python, its various libraries, and Tableau, we conduct a basic exploratory analysis of SAT scores in the United States.
 
 ## What is the data about
-![sat-csv-table](https://c1.staticflickr.com/9/8448/29871624861_d2a968ba1c_o.png)
-
 [![sat-csv-table]({{ site.url }}{{ site.baseurl }}/images/sat-scores/sat-csv-table.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/sat-csv-table.png)
 
 The data in the csv file is described as follows:
 
-![data-dictionary](https://c1.staticflickr.com/9/8075/29327540764_a977c1044d_o.png)
+[![data-dictionary]({{ site.url }}{{ site.baseurl }}/images/sat-scores/data-dictionary.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/data-dictionary.png)
 
 ### What we want to do
 We would like to see what the data can tell us about SAT scores and the proportion of people in each state who attempt the SAT.
@@ -30,7 +28,7 @@ Using Pandas, we read our csv file into a data frame - this will make our subseq
 ```python
 df.dtypes
 ```
-![dtypes](https://c2.staticflickr.com/6/5647/29871624951_76f01fd215_o.png)
+[![dtypes]({{ site.url }}{{ site.baseurl }}/images/sat-scores/dtypes.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/dtypes.png)
 
 ## Statistics
 Using a data frame also allows us a broad overview of the numerical columns which covers common statistical measures - mean, standard deviation, minimum, maximum, as well as the quartiles:
@@ -39,7 +37,7 @@ Using a data frame also allows us a broad overview of the numerical columns whic
 df.describe()
 ```
 
-![describe-results](https://c1.staticflickr.com/9/8470/29327540804_7b0db47bdd_o.png)
+[![describe-results]({{ site.url }}{{ site.baseurl }}/images/sat-scores/describe.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/describe.png)
 
 ## Plotting the data
 Visualization sometimes allows us to quickly spot patterns and relationships within the data.
@@ -52,7 +50,7 @@ import seaborn as sns
 sns.pairplot(df)
 ```
 
-![pairplot](https://c2.staticflickr.com/6/5277/29920761866_c80e668102_o.png)
+[![pairplot]({{ site.url }}{{ site.baseurl }}/images/sat-scores/pairplot.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/pairplot.png)
 
 Based on the pairplot:  
 <ul>
@@ -65,9 +63,9 @@ Based on the pairplot:
 ### Tableau
 In addition to the pairplot, we can also observe the data distribution by geographical region on Tableau.
 
-![rate](https://c2.staticflickr.com/8/7775/29328746303_6c3f0e31dd_o.png)
-![verbal](https://c2.staticflickr.com/6/5658/29661167260_03ca271475_o.png)
-![math](https://c1.staticflickr.com/9/8817/29327831794_2208253997_o.png)
+[![rate]({{ site.url }}{{ site.baseurl }}/images/sat-scores/Rate.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/Rate.png)
+[![verbal]({{ site.url }}{{ site.baseurl }}/images/sat-scores/Verbal.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/Verbal.png)
+[![math]({{ site.url }}{{ site.baseurl }}/images/sat-scores/Math.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/Math.png)
 
 Participation rates in the NorthEast region are amongst the highest, but lower than average mean scores are also observed. We would expect that the lower mean scores are as a result of high variance in the scores obtained by the numerous candidates in the area.
 
