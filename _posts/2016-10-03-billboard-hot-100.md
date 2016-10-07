@@ -25,7 +25,7 @@ Another from [Wikipedia](https://en.wikipedia.org/wiki/Billboard_charts){:target
 Essentially, the Billboard Hot 100 is a list of tracks that are ranked in the top 100 by radio play, online streaming and sales; the genre that the song is listed under is determined by its audience and not by its artist.
 
 ## What's in the data
-The dataset includes the artist's name, track name, track length, genre, the date it entered the Hot 100, the date it reached its highest rank on the Hot 100, and its rank on the Hot 100 for a period of 75 weeks starting from the week it entered (each week is represented as one column). 
+The dataset includes the artist's name, track name, track length, genre, the date it entered the Hot 100, the date it reached its highest rank on the Hot 100, and its rank on the Hot 100 for a period of 75 weeks starting from the week it entered (each week is represented as one column).
 
 ## Problem Statement
 
@@ -38,7 +38,7 @@ This week in class, we learned about defining a problem statement or a hypothesi
 
 Before we dive into the problem statement, we should take a look at the dataset and determine if any data cleaning is required.
 
-![original-dataset](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/original-dataset.png?raw=true)
+![original-dataset](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/original-dataset.png?raw=true)
 
 The original dataset has 317 entries of the tracks which were in the Hot 100 in the year 2000.
 
@@ -56,10 +56,10 @@ From the 'date.entered' and 'date.peaked' columns, we can find out how many week
 
 Here's a snapshot of our cleaned dataset:
 
-![billboards2](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/clean-data.png?raw=true)
+![billboards2](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/clean-data.png?raw=true)
 
 ## Statistics of our dataset
-![describe-results](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/describe-results.png?raw=true)
+![describe-results](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/describe-results.png?raw=true)
 
 What we can tell from the above:
 
@@ -81,7 +81,7 @@ This problem statement seems to require just two subsets of data from the datase
 ```python
 sns.pairplot(df,x_vars='rank_entered', y_vars='highest_rank', size=5);
 ```
-![pairplot](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/pairplot.png?raw=true)
+![pairplot](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/pairplot.png?raw=true)
 
 We can see from the pairplot that no matter what the ranks were coming into the Hot 100, there were tracks which got to the top 10.
 
@@ -130,7 +130,7 @@ This problem statement is actually similar to the one above. In this instance, o
 
 Let's first take a look at the distribution of the data:
 
-![length-rank](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/length-rank.png?raw=true)
+![length-rank](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/length-rank.png?raw=true)
 
 To test this, we grouped our data into two groups - long tracks and short tracks. How youwould define whether a track was long or short is purely arbitrary - we defined a long track as one that is longer than 250 seconds for a good distribution between the two groups.
 
@@ -142,7 +142,7 @@ We returned a very high probability of that (almost 14%) - i.e. we do not reject
 
 Let's take a look at the data using Tableau!
 
-![tableau-vizualization](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/tableau-viz.png?raw=true)
+![tableau-vizualization](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/tableau-viz.png?raw=true)
 
 Using Tableau, we can add in additional dimensions to our plot. In the above, we've included the season which a track entered the Hot 100 and the number of weeks it spent on the Hot 100.
 
