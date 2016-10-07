@@ -38,7 +38,7 @@ This week in class, we learned about defining a problem statement or a hypothesi
 
 Before we dive into the problem statement, we should take a look at the dataset and determine if any data cleaning is required.
 
-![original-dataset](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/original-dataset.png?raw=true)
+[![original-dataset]({{ site.url }}{{ site.baseurl }}/images/billboard/original-dataset.png)]({{ site.url }}{{ site.baseurl }}/images/billboard/original-dataset.png)
 
 The original dataset has 317 entries of the tracks which were in the Hot 100 in the year 2000.
 
@@ -56,10 +56,10 @@ From the 'date.entered' and 'date.peaked' columns, we can find out how many week
 
 Here's a snapshot of our cleaned dataset:
 
-![billboards2](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/clean-data.png?raw=true)
+[![billboards2]({{ site.url }}{{ site.baseurl }}/images/billboard/clean-data.png)]({{ site.url }}{{ site.baseurl }}/images/billboard/clean-data.png)
 
 ## Statistics of our dataset
-![describe-results](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/describe-results.png?raw=true)
+[![describe-results]({{ site.url }}{{ site.baseurl }}/images/billboard/describe-results.png)]({{ site.url }}{{ site.baseurl }}/images/billboard/describe-results.png)
 
 What we can tell from the above:
 
@@ -81,7 +81,7 @@ This problem statement seems to require just two subsets of data from the datase
 ```python
 sns.pairplot(df,x_vars='rank_entered', y_vars='highest_rank', size=5);
 ```
-![pairplot](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/pairplot.png?raw=true)
+[![pairplot]({{ site.url }}{{ site.baseurl }}/images/billboard/pairplot.png)]({{ site.url }}{{ site.baseurl }}/images/billboard/pairplot.png)
 
 We can see from the pairplot that no matter what the ranks were coming into the Hot 100, there were tracks which got to the top 10.
 
@@ -130,7 +130,7 @@ This problem statement is actually similar to the one above. In this instance, o
 
 Let's first take a look at the distribution of the data:
 
-![length-rank](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/length-rank.png?raw=true)
+[![length-rank-plot]({{ site.url }}{{ site.baseurl }}/images/billboard/length-rank.png)]({{ site.url }}{{ site.baseurl }}/images/billboard/length-rank.png)
 
 To test this, we grouped our data into two groups - long tracks and short tracks. How youwould define whether a track was long or short is purely arbitrary - we defined a long track as one that is longer than 250 seconds for a good distribution between the two groups.
 
@@ -142,7 +142,7 @@ We returned a very high probability of that (almost 14%) - i.e. we do not reject
 
 Let's take a look at the data using Tableau!
 
-![tableau-vizualization](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-02/images/tableau-viz.png?raw=true)
+[![tableau-viz]({{ site.url }}{{ site.baseurl }}/images/billboard/tableau-viz.png)]({{ site.url }}{{ site.baseurl }}/images/billboard/tableau-viz.png)
 
 Using Tableau, we can add in additional dimensions to our plot. In the above, we've included the season which a track entered the Hot 100 and the number of weeks it spent on the Hot 100.
 
