@@ -2,8 +2,9 @@
 tags:
   - DSI
 ---
-{% include toc %}
 Tagline: 1-liner summary of this post
+
+{% include toc %}
 
 ## Introduction
 - origins of the project, reason for doing the project

@@ -3,8 +3,9 @@ tags:
   - DSI
   - projects
 ---
-{% include toc %}
 Using Python, its various libraries, and Tableau, we conduct a basic exploratory analysis of SAT scores in the United States.
+
+{% include toc %}
 
 ## What is the data about
 [![sat-csv-table]({{ site.url }}{{ site.baseurl }}/images/sat-scores/sat-csv-table.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/sat-csv-table.png)

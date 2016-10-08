@@ -3,8 +3,9 @@ tags:
   - DSI
   - projects
 ---
-{% include toc %}
 What can we tell about the songs on the Billboard Hot 100?
+
+{% include toc %}
 
 ## What is the data about
 As someone who doesn't listen much to anything apart from 'classical' music, I didn't even know what the Billboard Hot 100 was. And for the sake of people like me (if there are any others), I'll just go through a little of what it is.
