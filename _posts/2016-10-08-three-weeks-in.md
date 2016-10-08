@@ -36,4 +36,4 @@ It's been a great first three weeks and I'm really looking forward to learning m
 
 Thank you for reading this long post on my thoughts and ramblings, I look forward to writing more posts on my projects and labs - I hope you'll enjoy them!
 
-> [Desire is the key to motivation, but it's determination and commitment to an unrelenting pursuit of your goal - a commitment to excellence - that will enable you to attain the success you seek. ~ Mario Andretti](http://www.brainyquote.com/quotes/quotes/m/marioandre130613.html?src=t_success)
+> [Desire is the key to motivation, but it's determination and commitment to an unrelenting pursuit of your goal - a commitment to excellence - that will enable you to attain the success you seek. ~ Mario Andretti](http://www.brainyquote.com/quotes/quotes/m/marioandre130613.html?src=t_success){:target='_blank'}

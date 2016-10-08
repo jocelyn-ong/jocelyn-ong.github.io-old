@@ -7,17 +7,17 @@ Using Python, its various libraries, and Tableau, we conduct a basic exploratory
 
 {% include toc %}
 
+## What we want to do
+We would like to see what the data can tell us about SAT scores and the proportion of people in each state who attempt the SAT.
+
+We could also if there is any correlation between any of the data - if there is, such data could be used for prediction purposes. For example, if verbal scores and math scores are highly correlated, we may be able to predict the mean verbal score of a state when we are given just the mean math score.
+
 ## What is the data about
 [![sat-csv-table]({{ site.url }}{{ site.baseurl }}/images/sat-scores/sat-csv-table.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/sat-csv-table.png)
 
 The data in the csv file is described as follows:
 
 [![data-dictionary]({{ site.url }}{{ site.baseurl }}/images/sat-scores/data-dictionary.png)]({{ site.url }}{{ site.baseurl }}/images/sat-scores/data-dictionary.png)
-
-### What we want to do
-We would like to see what the data can tell us about SAT scores and the proportion of people in each state who attempt the SAT.
-
-We could also if there is any correlation between any of the data - if there is, such data could be used for prediction purposes. For example, if verbal scores and math scores are highly correlated, we may be able to predict the mean verbal score of a state when we are given just the mean math score.
 
 ## Reading the data
 ```python
