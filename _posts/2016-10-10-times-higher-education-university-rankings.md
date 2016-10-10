@@ -45,6 +45,7 @@ Here's what our data looks like after loading it with the above code:
 |international_students |String |percentage of students who are international |
 |female_male_ratio |String |female student to male student ratio |
 |year |Integer |year of the ranking |
+
 \* The descriptions were provided to us as part of the challenge
 
 ## What we're doing
