@@ -3,6 +3,7 @@ tags:
   - DSI
   - collaboration
   - projects
+  - data-science
 ---
 {% include toc %}
 Tagline: 1-liner summary of this post
@@ -65,8 +66,11 @@ To do this, we would want to know:
 - Methods used
 - Code?
 - Go column by column
+
 [![alt]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)
 
 ## Modeling: generating the model and drawing conclusions
+
+## Review: Challenges faced
 
 ## Round up

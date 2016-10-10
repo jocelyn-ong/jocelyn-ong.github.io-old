@@ -2,6 +2,7 @@
 tags:
   - DSI
   - projects
+  - data-science
 ---
 What can we tell about the songs on the Billboard Hot 100?
 

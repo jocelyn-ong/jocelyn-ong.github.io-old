@@ -1,12 +1,14 @@
 ---
 tags:
   - DSI
+  - data-science
 ---
 Tagline: 1-liner summary of this post
 
 {% include toc %}
 
 ## Introduction
+<!-- - Do not put pictures too high up (messes with the toc) -->
 - origins of the project, reason for doing the project
 ### Outline of the whole post
 
