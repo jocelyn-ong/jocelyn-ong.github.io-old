@@ -101,7 +101,7 @@ We had been told to consider regularization and cross validation when building o
 
 Based on our coefficients, we were able to tell which were the features which were important in our model. In this case, it was citations, with a positive coefficient (i.e. the higher the citations score, the higher the total score).
 
-Our predictions were scored against the actual scores and we obtained a mean squared error of 0.012559 (yay!).
+Our predictions were scored against the actual scores and we obtained a [mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error){:target='_blank'} of 0.012559 (yay!).
 
 ## Round up
 The mean squared error we got above was actually not from our first attempted submission. I believe we had a mean squared error of more than 700 (yikes!) for that first round.
