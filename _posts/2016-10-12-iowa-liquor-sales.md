@@ -10,7 +10,7 @@ Where in Iowa should we open a liquor store?
 {% include toc %}
 
 ## Introduction
-This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](https://jpfreeley.github.io){:target:'_blank'} and [Joshua](https://ajbentley.github.io){:target:'_blank'}.
+This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](https://jpfreeley.github.io){:target='_blank'} and [Joshua](https://ajbentley.github.io){:target='_blank'}.
 
 For our project, we'll be looking at the data from a market research perspective:
 
@@ -19,12 +19,12 @@ For our project, we'll be looking at the data from a market research perspective
 ## About the dataset
 
 ### How we obtained the data
-The dataset we'll be using can be downloaded directly from the [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3tr-qhgy){:target:'_blank'} website. It's a large dataset and to facilitate working with the data, we'll be looking at this [dataset](https://drive.google.com/file/d/0Bx2SHQGVqWaseDB4QU9ZSVFDY2M/view?usp=sharing){:target='_blank'}, which is 10% of a filtered version of the original dataset.
+The dataset we'll be using can be downloaded directly from the [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3tr-qhgy){:target='_blank'} website. It's a large dataset and to facilitate working with the data, we'll be looking at this [dataset](https://drive.google.com/file/d/0Bx2SHQGVqWaseDB4QU9ZSVFDY2M/view?usp=sharing){:target='_blank'}, which is 10% of a filtered version of the original dataset.
 
 On a side note, the slightly filtered version can be found [here version](https://www.dropbox.com/sh/pf5n5sgfgiri3i8/AACkaMeL_i_WgZ00rpxOOcysa?dl=0){:target='_blank'}.
 
 ### What's in the data
-According to [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3tr-qhgy){:target:'_blank'}:
+According to [data.iowa.gov](https://data.iowa.gov/Economy/Iowa-Liquor-Sales/m3tr-qhgy){:target='_blank'}:
 
 >This dataset contains the spirits purchase information of Iowa Class “E” liquor licensees by product and date of purchase...
 
@@ -88,7 +88,7 @@ Because most of the stores had total annual sales of below $100,000, we set it a
 
 The distribution is still slightly skewed, but much less than before.
 
-Looking at our original dataset, we felt that the available data was not sufficient for predicting sales per zip code. Our hypothesis is that the demographics of a zip code would have an influence on its liquor sales, so we found the [demographic data for the zip codes in Iowa](http://www.iowadatacenter.org/browse/ZCTAs.html){:target:'_blank'}.
+Looking at our original dataset, we felt that the available data was not sufficient for predicting sales per zip code. Our hypothesis is that the demographics of a zip code would have an influence on its liquor sales, so we found the [demographic data for the zip codes in Iowa](http://www.iowadatacenter.org/browse/ZCTAs.html){:target='_blank'}.
 
 Here's a look at the distributions of some of the columns in our demographic data:
 
@@ -152,11 +152,11 @@ All these data were then joined together to produce the final dataframe that we 
 
 With these data, we first took a look at how our demographics were related to sales and volume:
 
-**Sales**
+*Sales*
 
 [![heatmap-total-sales]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-sales.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-sales.png)
 
-**Volume**
+*Volume*
 
 [![heatmap-total-volume]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-volume.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-volume.png)
 
@@ -168,13 +168,13 @@ We built two models, one to predict sales, and one to predict volume. In both mo
 
 We chose lasso regression with cross validation to build our models and plotted our predicted values against our actual values to see how well the models did:
 
-**Sales**
+*Sales*
 
 R-squared: 0.85
 
 [![predicted-vs-actual-sales-lasso]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-sales-lasso.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-sales-lasso.png)
 
-**Volume**
+*Volume*
 
 R-squared: 0.86
 
