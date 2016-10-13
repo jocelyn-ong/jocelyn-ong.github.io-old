@@ -80,7 +80,7 @@ store_summary.columns = ['Store Number', 'Store Sales', 'Store Volume']
 
 Plotting the above, this is the distribution we got:
 
-[![distribution-of-store-sales-before](images/iowa-liquor/distribution-of-store-sales-before.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/distribution-of-store-sales-before.png)
+[![distribution-of-store-sales-before]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/distribution-of-store-sales-before.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/distribution-of-store-sales-before.png)
 
 Because most of the stores had total annual sales of below $100,000, we set it as our threshold and dropped all stores that had total annual sales greater than $100,000. Doing so, we get the following distribution:
 
