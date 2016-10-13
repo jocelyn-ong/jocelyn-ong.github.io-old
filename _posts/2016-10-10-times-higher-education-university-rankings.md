@@ -91,13 +91,13 @@ We thought about including country as a feature so we looked into cleaning it up
 ## Modeling: generating the model and drawing conclusions
 Before generating a model, we created a heat map to check the correlations between each of the columns:
 
-[![alt]({{ site.url }}{{ site.baseurl }}/images/times-ranking/heatmap.png)]({{ site.url }}{{ site.baseurl }}/images/times-ranking/heatmap.png)
+[![heatmap]({{ site.url }}{{ site.baseurl }}/images/times-ranking/heatmap.png)]({{ site.url }}{{ site.baseurl }}/images/times-ranking/heatmap.png)
 
 As we can see from the heatmap, total_score has the highest correlation with teaching, research, and citations. (Logically, total score should be a function of all the other scores, so the correlation isn't surprising.)
 
 We had been told to consider regularization and cross validation when building our model. Given that regularization would assign weights to coefficients to minimize them, we decided to run a ridge regression on all features and let the model decide which features were more important.
 
-[![alt]({{ site.url }}{{ site.baseurl }}/images/times-ranking/feature_coef.png)]({{ site.url }}{{ site.baseurl }}/images/times-ranking/feature_coef.png)
+[![feature_coef]({{ site.url }}{{ site.baseurl }}/images/times-ranking/feature_coef.png)]({{ site.url }}{{ site.baseurl }}/images/times-ranking/feature_coef.png)
 
 Based on our coefficients, we were able to tell which were the features which were important in our model. In this case, it was citations, with a positive coefficient (i.e. the higher the citations score, the higher the total score).
 
