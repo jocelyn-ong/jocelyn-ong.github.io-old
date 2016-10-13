@@ -10,7 +10,7 @@ Where in Iowa should we open a liquor store?
 {% include toc %}
 
 ## Introduction
-This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](https://jpfreeley.github.io) and [Joshua]().
+This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](https://jpfreeley.github.io) and [Joshua](https://ajbentley.github.io).
 
 For our project, we'll be looking at the data from a market research perspective:
 
