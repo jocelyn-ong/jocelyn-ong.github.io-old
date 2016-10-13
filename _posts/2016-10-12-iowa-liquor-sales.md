@@ -10,7 +10,7 @@ Where in Iowa should we open a liquor store?
 {% include toc %}
 
 ## Introduction
-This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](jpfreeley.github.io) and [Joshua]().
+This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](https://jpfreeley.github.io) and [Joshua]().
 
 For our project, we'll be looking at the data from a market research perspective:
 
@@ -80,7 +80,7 @@ store_summary.columns = ['Store Number', 'Store Sales', 'Store Volume']
 
 Plotting the above, this is the distribution we got:
 
-[![distribution-of-store-sales-before]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/distribution-of-store-sales-before.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/distribution-of-store-sales-before.png)
+[![distribution-of-store-sales-before](images/iowa-liquor/distribution-of-store-sales-before.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/distribution-of-store-sales-before.png)
 
 Because most of the stores had total annual sales of below $100,000, we set it as our threshold and dropped all stores that had total annual sales greater than $100,000. Doing so, we get the following distribution:
 
