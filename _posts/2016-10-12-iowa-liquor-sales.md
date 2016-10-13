@@ -197,7 +197,7 @@ First, the dataset. We looked at the dataset and we couldn't find anything that 
 
 There were also lots of mistakes in the dataset: wrong zips, cities spelled wrongly, missing data etc. We managed to cut down the amount of cleaning required by using an external dataset for zip codes and other location data, even though it took quite a bit of work to collate these from the web ([here](http://www.unitedstateszipcodes.org/zip-code-database/) and [here](http://www.iowayouthsurvey.iowa.gov/images/iacountiesnumbers.pdf)).
 
-Finally if you take a look at the [data dictionary](#about-the-dataset) again, you'll realise that there isn't a field which talks about the profit or revenue of the liquor stores. The dollar values in our dataset refer to a) how much the state of Iowa paid to purchase the alcohol (presumably from distilleries/ breweries etc.); and b) hoy much the state of Iowa received from the liquor stores for the alcohol.
+Finally if you take a look at the [data dictionary](#about-the-dataset) again, you'll realize that there isn't a field which talks about the profit or revenue of the liquor stores. The dollar values in our dataset refer to a) how much the state of Iowa paid to purchase the alcohol (presumably from distilleries/ breweries etc.); and b) how much the state of Iowa received from the liquor stores for the alcohol.
 
 To deal with this, we made an assumption that a liquor store will be able to sell everything that it bought from the state within a short period of time (before the next transaction) and that the alcohol will never be sold at a loss.
 
