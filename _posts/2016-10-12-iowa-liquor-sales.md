@@ -152,7 +152,7 @@ All these data were then joined together to produce the final dataframe that we 
 
 With these data, we first took a look at how our demographics were related to sales and volume:
 
-*Sales*
+__Sales__
 
 [![heatmap-total-sales]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-sales.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-sales.png)
 
@@ -168,15 +168,11 @@ We built two models, one to predict sales, and one to predict volume. In both mo
 
 We chose lasso regression with cross validation to build our models and plotted our predicted values against our actual values to see how well the models did:
 
-*Sales*
-
-R-squared: 0.85
+*Sales* - R-squared: 0.85
 
 [![predicted-vs-actual-sales-lasso]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-sales-lasso.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-sales-lasso.png)
 
-*Volume*
-
-R-squared: 0.86
+*Volume* - R-squared: 0.86
 
 [![predicted-vs-actual-volume-lasso]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-volume-lasso.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-volume-lasso.png)
 
