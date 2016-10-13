@@ -10,7 +10,7 @@ Where in Iowa should we open a liquor store?
 {% include toc %}
 
 ## Introduction
-This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](https://jpfreeley.github.io) and [Joshua](https://ajbentley.github.io).
+This is Project 3 from the Data Science Immersive at General Assembly and we'll be working with the Iowa Liquor Sales dataset. This is also our first group project, and I'll be collaborating with [JP](https://jpfreeley.github.io){:target:'_blank'} and [Joshua](https://ajbentley.github.io){:target:'_blank'}.
 
 For our project, we'll be looking at the data from a market research perspective:
 
@@ -88,7 +88,7 @@ Because most of the stores had total annual sales of below $100,000, we set it a
 
 The distribution is still slightly skewed, but much less than before.
 
-Looking at our original dataset, we felt that the available data was not sufficient for predicting sales per zip code. Our hypothesis is that the demographics of a zip code would have an influence on its liquor sales, so we found the [demographic data for the zip codes in Iowa](http://www.iowadatacenter.org/browse/ZCTAs.html).
+Looking at our original dataset, we felt that the available data was not sufficient for predicting sales per zip code. Our hypothesis is that the demographics of a zip code would have an influence on its liquor sales, so we found the [demographic data for the zip codes in Iowa](http://www.iowadatacenter.org/browse/ZCTAs.html){:target:'_blank'}.
 
 Here's a look at the distributions of some of the columns in our demographic data:
 
