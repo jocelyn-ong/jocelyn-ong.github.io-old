@@ -5,7 +5,7 @@ tags:
   - projects
   - data-science
 ---
-Tagline: 1-liner summary of this post
+Where in Iowa should we open a liquor store?
 
 {% include toc %}
 
