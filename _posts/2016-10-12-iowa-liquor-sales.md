@@ -156,7 +156,7 @@ __Sales__
 
 [![heatmap-total-sales]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-sales.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-sales.png)
 
-*Volume*
+__Volume__
 
 [![heatmap-total-volume]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-volume.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/heatmap-total-volume.png)
 
@@ -168,11 +168,11 @@ We built two models, one to predict sales, and one to predict volume. In both mo
 
 We chose lasso regression with cross validation to build our models and plotted our predicted values against our actual values to see how well the models did:
 
-*Sales* - R-squared: 0.85
+__Sales__ - R-squared: 0.85
 
 [![predicted-vs-actual-sales-lasso]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-sales-lasso.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-sales-lasso.png)
 
-*Volume* - R-squared: 0.86
+__Volume__ - R-squared: 0.86
 
 [![predicted-vs-actual-volume-lasso]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-volume-lasso.png)]({{ site.url }}{{ site.baseurl }}/images/iowa-liquor/predicted-vs-actual-volume-lasso.png)
 
