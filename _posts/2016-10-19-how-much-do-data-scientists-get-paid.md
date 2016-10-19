@@ -61,7 +61,7 @@ Location is usually expressed as `City, State`, so we split those up into separa
 
 Here's what our clean data looks like:
 
-[![clean-df]({{ site.url }}{{ site.baseurl }}/images/ds-salaries/scraped-df.png)]({{ site.url }}{{ site.baseurl }}/images/ds-salaries/clean-df.png)
+[![clean-df]({{ site.url }}{{ site.baseurl }}/images/ds-salaries/clean-df.png)]({{ site.url }}{{ site.baseurl }}/images/ds-salaries/clean-df.png)
 
 Since the data that goes into a  `LogisticRegression` model needs to be numerical, we created dummy variables for each of our features:
 
