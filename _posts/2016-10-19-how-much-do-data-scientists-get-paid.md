@@ -110,6 +110,7 @@ Using our model, we created our confusion matrix, and found our precision, recal
 [![roc-curve-162000]({{ site.url }}{{ site.baseurl }}/images/ds-salaries/roc-curve-162000.png)]({{ site.url }}{{ site.baseurl }}/images/ds-salaries/roc-curve-162000.png)
 
 ## Fun stuff
+
 ### Word Cloud!
 Yes, yes, word clouds may be passé, and some people consider them dreadful or hideous, but I found them interesting and pretty as a background image. (Maybe not that informative though, because I've never really looked at the words of any word cloud in detail.)
 
