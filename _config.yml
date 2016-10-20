@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Jocelyn Ong | I speak Data"
+title                    : "Jocelyn Ong"
 title_separator          : " | "
-name                     : "Jocelyn Ong"
-description              : "My Data Science Journey"
+name                     : "I speak Data"
+description              : "Hello Data Science"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : jocelyn-ong/jocelyn-ong.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
