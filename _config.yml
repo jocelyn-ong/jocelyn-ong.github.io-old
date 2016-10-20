@@ -79,7 +79,7 @@ analytics:
 author:
   name             : *name
   avatar           : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAl9AAAAJDg3MTA4MmNhLTYxYTctNDQ5ZC1hOGZiLThjYzY0OTczNWVmNw.jpg"
-  bio              : "Data scientist // Data Wrangler // Hello, I speak Data!"
+  bio              : "Data scientist // <br>Data Wrangler // <br>Hello, I speak Data!"
   location         : "New York City"
   email            : "ongjoce@gmail.com"
   uri              :
