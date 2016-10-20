@@ -21,7 +21,7 @@ In this week's scenario, we're data scientists at a firm offering technology and
 ## Executive Summary (or TL;DR)
 Our objective is to use data from job search aggregators to determine what industry factors affect a data scientist's pay scale. We looked at the location of the job and the job description, which may include education and experience requirements, and programming language and software knowledge requirements etc.
 
-Rather than try to predict the actual salary based on the above, we looked at whether the salary is expected to be in the higher or lower range. We pulled our data from the aggregators via web scraping, then formatted the data into numerical data through dummy variables. Each job was then put into either the higher pay bin or the lower pay bin. With this, we trained a logistic regression model which we could then use to predict pay grades for other job listings where salaries were not disclosed. (A logistic regression model used for classification problems.)
+Rather than try to predict the actual salary based on the above, we looked at whether the salary is expected to be in the higher or lower range. We pulled our data from the aggregators via web scraping, then formatted the data into numerical data through dummy variables. Each job was then put into either the higher pay bin or the lower pay bin. With this, we trained a logistic regression model which we could then use to predict pay grades for other job listings where salaries were not disclosed. (A logistic regression model is used for classification problems.)
 
 Based on our model, we found that the following features were important:
 
