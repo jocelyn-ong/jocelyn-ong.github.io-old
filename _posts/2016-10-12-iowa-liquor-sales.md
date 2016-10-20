@@ -4,6 +4,7 @@ tags:
   - collaboration
   - projects
   - data-science
+  - python
 ---
 Where in Iowa should we open a liquor store?
 

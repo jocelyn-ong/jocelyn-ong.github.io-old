@@ -3,6 +3,7 @@ tags:
   - DSI
   - projects
   - data-science
+  - python
 ---
 Using Python, its various libraries, and Tableau, we conduct a basic exploratory analysis of SAT scores in the United States.
 

@@ -5,3 +5,5 @@
 - collaboration
 - projects
 - data-science
+- python
+- sql

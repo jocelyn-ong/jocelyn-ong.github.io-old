@@ -4,6 +4,7 @@ tags:
   - data-science
   - collaboration
   - projects
+  - python
 ---
 <!-- An individual blog post describing your findings, with two sections: the first for a non-technical audience, and the second for data scientist peers. -->
 What affects a data scientist's pay scale?
