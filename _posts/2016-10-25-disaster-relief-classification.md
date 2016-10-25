@@ -20,7 +20,9 @@ This week we're looking at a classification problem, and we'll consider various 
 How would this be useful to an emergency management firm? Maybe it can be used to predict the probability of survival in a disaster for efficient resource allocation (very contentious discussion here - we'll not go into that), or maybe it can be used as an after-the-fact review, to see if there were any factors that affected the survival rate.
 
 ## About the dataset
-We'll be working with the very well-used Titanic dataset. We were told to pull the data from the General Assembly database, but if you'd like to work with the dataset on your own, it is also available on [Kaggle](https://www.kaggle.com/c/titanic/data){:target='_blank'}.
+We'll be working with the very well-used Titanic dataset. We were told to pull the data from the General Assembly database using SQL, but if you'd like to work with the dataset on your own, it is also available on [Kaggle](https://www.kaggle.com/c/titanic/data){:target='_blank'}.
+
+We pulled the data using the iPython-sql magic and psycopg. You can view the documentation and installation instructions [here](https://github.com/catherinedevlin/ipython-sql){:target='_blank'} and [here](http://initd.org/psycopg/){:target='_blank'}.
 
 ### Data dictionary
 
@@ -39,7 +41,7 @@ We'll be working with the very well-used Titanic dataset. We were told to pull t
 |Cabin|String|Cabin number
 |Embarked|Categorical (String)|Port of embarkation<br>(C = Cherbourg; Q = Queenstown; S = Southampton)
 
-The above information is obtained from [Kaggle](https://www.kaggle.com/c/titanic/data) and formatted for presentation purposes.
+The above information is obtained from [Kaggle](https://www.kaggle.com/c/titanic/data){:target='blank'} and formatted for presentation purposes.
 
 The column "Survived" is our target, and the rest of the columns may be used as features (where data is complete and relevant).
 
@@ -48,26 +50,27 @@ The column "Survived" is our target, and the rest of the columns may be used as 
 For our EDA, we'll look at the various columns in relation to the column "Survived" and see if we can find any relationships just from visualizations.
 
 Plots:
-- Age
 
-  [![alt]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)
+- Class and sex
+
+  [![class_and_sex]({{ site.url }}{{ site.baseurl }}/images/titanic/class_and_sex.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/class_and_sex.png)
 
 - Age and sex
 
-  [image]
+  [![age_and_sex]({{ site.url }}{{ site.baseurl }}/images/titanic/age_and_sex.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/age_and_sex.png)
 
 - Age and class
 
-  [image]
+  [![age_and_class]({{ site.url }}{{ site.baseurl }}/images/titanic/age_and_class.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/age_and_class.png)
 
 - Age and port of embarkation
 
-  [image]
+  [![age_and_port]({{ site.url }}{{ site.baseurl }}/images/titanic/age_and_port.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/age_and_port.png)
 
 
 We can also take a look at the heatmap of the correlations in our dataset:
 
-[image]
+[![heatmap]({{ site.url }}{{ site.baseurl }}/images/titanic/heatmap.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/heatmap.png)
 
 The heatmap tells us the strength of the correlation between "Survived" and each of the other columns, and also tells us if there is any multicollinearity between the other columns.
 
@@ -87,7 +90,7 @@ Let's look at our dataset to identify any missing values:
 df.info()
 ```
 
-[image]
+[![df_info]({{ site.url }}{{ site.baseurl }}/images/titanic/df_info.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/df_info.png)
 
 Age was supposed to be one of our main features, but there are so many missing instances! We don't have a lot of data, so let's try to fill these in.
 
@@ -97,21 +100,21 @@ One way we could fill in the missing values in age is to just fill in the median
 
 - Class
 
-  [image]
+  [![age_class_box]({{ site.url }}{{ site.baseurl }}/images/titanic/age_class_box.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/age_class_box.png)
 
 - Salutation
 
-  [image]
+  [![age_salutation]({{ site.url }}{{ site.baseurl }}/images/titanic/age_salutation.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/age_salutation.png)
 
 - Class and salutation
 
-  [image]
+  [![class_and_salutation]({{ site.url }}{{ site.baseurl }}/images/titanic/class_and_salutation.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/class_and_salutation.png)
 
 It seems like if we combine class and salutation, we may be able to get a more accurate estimation of age.
 
 Backtrack a few steps: how do we get a passenger's salutation?
 
-[image]
+[![salutation_head]({{ site.url }}{{ site.baseurl }}/images/titanic/salutation_head.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/salutation_head.png)
 
 Each "Name" entry is in the format `Last Name, Salutation. First Name`. The salutations all have a period to it, so we'll split the names on spaces, and look for the item that has a period, and return that.
 
@@ -125,7 +128,7 @@ def get_salute(name):
 
 There were a few salutations which only occurred a few times, so we grouped them into the majority groups, and ended up with the five main salutations. We then found the median age of each salutation and class.
 
-[image]
+[![age_median]({{ site.url }}{{ site.baseurl }}/images/titanic/age_median.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/age_median.png)
 
 Each missing age in our dataset is then mapped to this to return an estimated age.
 
@@ -174,6 +177,86 @@ Note that we've only trained our scaler on the training data, and that our test 
 
 ## Modeling: generating the model and drawing conclusions
 
-We'll be looking at four different classification models - logistic regression, K nearest neighbors, 
+We'll be looking at four different classification models - logistic regression, K nearest neighbors, decision tree, and bagging classifier.
+
+We'll also run gridsearch on each of these classifiers to get the best parameters for each.
+
+### Logistic regression
+
+```python
+gs = GridSearchCV(LogisticRegression(),
+                 logreg_parameters,
+                 cv=5)
+gs.fit(X_train,y_train)
+```
+
+### K Nearest neighbors
+
+```python
+gs2 = GridSearchCV(KNeighborsClassifier(),
+                   {'n_neighbors': np.arange(1,50,5),
+                    'weights': ['uniform', 'distance'],
+                    'algorithm': ['ball_tree', 'kd_tree', 'brute']},
+                   cv=5)
+gs2.fit(X_train,y_train)
+```
+
+### Decision tree classifier
+
+```python
+gs4 = GridSearchCV(DecisionTreeClassifier(),
+                   {'criterion': ['gini', 'entropy'],
+                    'min_samples_split': np.arange(2,30,2),
+                    'min_samples_leaf': np.arange(1,15,1)},
+                   cv=5)
+gs4.fit(X_train, y_train)
+```
+
+### Bagging classifier
+
+```python
+gs5 = GridSearchCV(BaggingClassifier(base_estimator=dt),
+                  {'n_estimators': np.arange(10,50,5),
+                  'max_samples': np.arange(0.1,1.0,0.1),
+                  'max_features': np.arange(1,len(X_train.columns)+1,1)},
+                  cv=5)
+gs5.fit(X_train, y_train)
+```
+
+With our four models, we plotted our ROC curves on the same plot to compare them:
+
+[![four_roc]({{ site.url }}{{ site.baseurl }}/images/titanic/four_roc.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/four_roc.png)
+
+All four curves are actually very similar and it's difficult to tell which of these is considered the best. If you wanted to be really particular, you would first decide what your tradeoff would be between your true positive rate (TPR) and false positive rate (FPR). This would give you a line (vertical or horizontal depending on whether you wanted to limit TPR or FPR) which would intersect all four curves, and you'd pick the one that had the best performance at that point. (Otherwise, the performance of any of the curves should be comparable in general.)
+
+### Feature importance
+
+So how important were the features we used in determining whether a passenger survived?
+
+There are a few ways we can interpret this, and we'll consider two of them now.
+
+#### Logistic regression coefficients
+
+[![log_reg_coef]({{ site.url }}{{ site.baseurl }}/images/titanic/log_reg_coef.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/log_reg_coef.png)
+
+We've ranked the features in order of the magnitude of their absolute coefficients. This number is an indication of how much the feature affects the model.
+
+We can see that at the top of our table is whether the passenger is male (or not). Which kind of makes sense if you think about the movie - "Women and children first!".
+
+Class comes next. Specifically, whether a passenger was in the third class or not. If we go back up to our [EDA](#exploratory-data-analysis-(eda)), you'll see that most of the third class passengers did not survive, so it seemed logical that the model would place more importance on this.
+
+#### Decision tree
+
+Another way to interpret feature importances is to look at how our decision tree was constructed. The goal of a decision tree is to reach purity in the least number of steps. Another way to look at it, is that at each step, the decision tree asks a question that separates the data most clearly into each class.
+
+We've exported our decision tree into an image file and it's massive (many decision trees are), but right at the top is again whether the the passenger is male (or not).
+
+[![tree]({{ site.url }}{{ site.baseurl }}/images/titanic/tree.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/tree.png)
 
 ## Round up
+
+This is a well studied dataset and you can definitely find many posts online exploring it. Despite that, I hope you've enjoyed reading about my exploration of the Titanic dataset! I enjoyed working with it and it was also a good chance to work on my visualization skills.
+
+You can view my notebook for this project [here on GitHub](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-05/code/starter-code/project-5-jocelyn-ong.ipynb){:target='_blank'}.
+
+Stay tuned for my next post!
