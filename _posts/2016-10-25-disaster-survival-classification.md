@@ -244,7 +244,7 @@ We've ranked the features in order of the magnitude of their absolute coefficien
 
 We can see that at the top of our table is whether the passenger is male (or not). Which kind of makes sense if you think about the movie - "Women and children first!".
 
-Class comes next. Specifically, whether a passenger was in the third class or not. If we go back up to our [EDA](#exploratory-data-analysis-(eda)), you'll see that most of the third class passengers did not survive, so it seemed logical that the model would place more importance on this.
+Class comes next. Specifically, whether a passenger was in the third class or not. If we go back up to our [EDA](#exploratory-data-analysis-eda), you'll see that most of the third class passengers did not survive, so it seemed logical that the model would place more importance on this.
 
 #### Decision tree
 
