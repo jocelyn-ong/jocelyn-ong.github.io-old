@@ -67,6 +67,7 @@ Plots:
 
   [![age_and_port]({{ site.url }}{{ site.baseurl }}/images/titanic/age_and_port.png)]({{ site.url }}{{ site.baseurl }}/images/titanic/age_and_port.png)
 
+Based on the plots, we can see that age, sex and class seem to be good indications of whether a passenger survived or not. Port of embarkation seems to have some indication, but because majority of the passengers boarded at Southampton, we can't tell for sure whether there's any effect.
 
 We can also take a look at the heatmap of the correlations in our dataset:
 
