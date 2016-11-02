@@ -4,6 +4,9 @@ tags:
   - projects
   - data-science
   - python
+  - SAT
+  - eda
+  - visualizations
 ---
 Using Python, its various libraries, and Tableau, we conduct a basic exploratory analysis of SAT scores in the United States.
 

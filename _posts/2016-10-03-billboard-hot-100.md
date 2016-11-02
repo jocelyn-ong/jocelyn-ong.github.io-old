@@ -4,6 +4,9 @@ tags:
   - projects
   - data-science
   - python
+  - billboard
+  - eda
+  - visualizations
 ---
 What can we tell about the songs on the Billboard Hot 100?
 

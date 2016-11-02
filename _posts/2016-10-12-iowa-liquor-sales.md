@@ -5,6 +5,10 @@ tags:
   - projects
   - data-science
   - python
+  - eda
+  - visualizations
+  - regression
+  - web-scraping
 ---
 Where in Iowa should we open a liquor store?
 
