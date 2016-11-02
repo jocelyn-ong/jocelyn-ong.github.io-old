@@ -29,7 +29,9 @@ We'll be looking at IMDb ratings and what are some of the things that affect a m
 We got web-scraped data from IMDb with some help from OMDb API, transformed some of the words into features, and tried to predict actual ratings (failed) and/ or predict whether ratings will be higher than 8.5 (didn't do too badly). We found that the director of a movie has a pretty big impact on whether ratings will be higher than 8.5 on IMDb.
 
 ## About the data
+
 ### How we obtained our data
+
 Hello, BeautifulSoup! No, I didn't use much of it this time around. (I tried, but everything took too long to run. Maybe I'll try it again when I have more time.)
 
 We had a lot of guidance for obtaining the data this week in our labs. Each movie's page on IMDb can be accessed by a unique IMDB ID that starts with "tt" followed by 9 numbers. Using a combination of the `requests` and `re` libraries, we pulled the movie IDs of the [top 250 rated movies](http://www.imdb.com/chart/top){:target="_blank"}.
