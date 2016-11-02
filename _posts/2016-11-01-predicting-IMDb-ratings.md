@@ -176,46 +176,91 @@ Before we get to modeling, we'll take a look at the relationships within out dat
 [![director_rating]({{ site.url }}{{ site.baseurl }}/images/imdb/director_rating.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/director_rating.png)
 
 ## Modeling: generating the model and drawing conclusions
-So I tried both regression (predicting actual ratings) and classification (predicting whether a movie will have a rating higher than 8.5) with this dataset.
+So I tried both regression (predicting actual ratings) and classification (predicting whether a movie will have a rating higher than 8.5) with this dataset. I wanted to test several models, so I created a function to evaluate them:
 
 ```python
-# Regression model
-gs3 = model_selection.GridSearchCV(ensemble.GradientBoostingRegressor(random_state=1),
-                                  {"n_estimators": np.arange(50,100,10)},
-                                  cv=5)
-gs3.fit(X_train,yr_train)
+def fit_model(model, name,  X_train, X_test, y_train, y_test, mtype="r"):
+    model.fit(X_train,y_train)
+    y_pred = model.predict(X_test)
+    score = model.score(X_test, y_test)
+    print "{} Score: {:.2f}".format(name, score)
+
+    if mtype=="r":
+        print "{} MSE: {:.2f}".format(name, metrics.mean_squared_error(y_test, y_pred))
+
+    return model, y_pred
 ```
+
+```python
+def evaluate_model(model, name, mtype="r", X=df4.iloc[:, 8:]):
+    print name
+    if mtype=="r":
+        # set X and y
+        y = df4["imdbRating"]
+        X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.3, random_state=77)
+
+        # fit the model
+        model, y_pred = fit_model(model, name, X_train, X_test, y_train, y_test, mtype)
+
+        # Plotting
+        plt.plot([min(y_test), max(y_test)],[min(y_test), max(y_test)],'-');
+        plt.scatter(y_pred, y_test);
+        plt.title("{}\nActual and predicted ratings".format(name));
+        plt.xlabel("Predicted");
+        plt.ylabel("Actual");
+        plt.show();
+        return model
+
+    elif mtype=="c":
+        # set X and y
+        y_class = df4["rating_higher_8.5"]
+        X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y_class, stratify=y_class,
+                                                                      test_size=0.3, random_state=77)
+
+        # fit the model
+        model, y_pred = fit_model(model, name, X_train, X_test, y_train, y_test, mtype)
+
+        # confusion matrix
+        conmat = metrics.confusion_matrix(y_test, y_pred)
+        conmat = pd.DataFrame(conmat)
+        conmat
+
+        # classification report
+        print metrics.classification_report(y_test, y_pred)
+
+        # plotting
+        try:
+            y_score = model.decision_function(X_test)
+        except:
+            y_score = model.predict_proba(X_test)[:,1]
+
+        fpr, tpr, thresholds = metrics.roc_curve(y_test, y_score)
+        plt.plot(fpr,tpr);
+        plt.title("{}\nROC curve".format(name));
+        plt.ylim((-0.1, 1.1));
+        plt.xlim((-0.1, 1.1));
+        plt.xlabel("FPR");
+        plt.ylabel("TPR");
+        plt.text(0.8,0.05,"AUC: {:0.2f}".format(metrics.roc_auc_score(y_test, y_score)));
+
+        return model, conmat, X, y
+    else:
+        return "Wrong type"
+```
+
+Here's a couple of our plots from the above:
 
 [![regression]({{ site.url }}{{ site.baseurl }}/images/imdb/regression.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/regression.png)
 
-```python
-
-# Classification model
-gs4 = model_selection.GridSearchCV(ensemble.GradientBoostingClassifier(random_state=1),
-                                  {"n_estimators": np.arange(50,100,10),
-                                   "min_samples_split": np.arange(5,10,1),
-                                   "min_samples_leaf": np.arange(5,10,1)},
-                                  cv=5)
-gs4.fit(X_train,yc_train)
-```
-
 [![roc_curve]({{ site.url }}{{ site.baseurl }}/images/imdb/roc_curve.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/roc_curve.png)
 
-With each model we ran our score functions, and regression was terrible. Classification did quite well with an accuracy of about 80%.
+With each model we ran our score functions, and regression was terrible. Classification did quite well with an average accuracy of about 80%.
 
-We then looked at our features using `RFECV` in `sklearn`.
+We also looked at the coefficients of our classification model:
 
-```python
-select = feature_selection.RFECV(gbc2,cv=5)
-select.fit(X_train, yc_train)
-X_train_new = select.transform(X_train)
-```
+[![logreg_coef]({{ site.url }}{{ site.baseurl }}/images/imdb/logreg_coef.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/logreg_coef.png)
 
-We got minimal to no improvement in our score after feature selection:
-
-[![roc_curve_selected]({{ site.url }}{{ site.baseurl }}/images/imdb/roc_curve_selected.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/roc_curve_selected.png)
-
-One of the things that I noted (without the recursive feature elimination) was that:
+One of the things that I noted (before looking at the coefficients) was that:
 
 - Actors don't matter
 - Plot summary doesn't matter
