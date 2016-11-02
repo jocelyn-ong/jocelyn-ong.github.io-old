@@ -126,13 +126,15 @@ We also want to convert some of the text columns to dummies so that we can use t
 def oscars_won(i):
     try:
         i_list = i.split()
-        if "Oscars." in i.split() and i_list[i_list.index("Oscars.")-2] == "Won":
-            return float(i_list[i_list.index("Oscars.")-1])
+        i_list = [x.strip(".") for x in i_list]
+        if "Oscars" in i_list and i_list[i_list.index("Oscars")-2] == "Won":
+            return float(i_list[i_list.index("Oscars")-1])
+        elif "Oscar" in i_list and  i_list[i_list.index("Oscar")-2] == "Won":
+            return float(i_list[i_list.index("Oscar")-1])
         else:
             return 0
     except:
         return 0
-df2["Oscars_won"] = df2["Awards"].map(oscars_won)
 ```
 
 - Languages, countries, actors, directors
@@ -143,8 +145,8 @@ all_languages = []
 for i in df2["Language"]:
     lang_list = str(i).split(",")
     all_languages.extend([j.strip() for j in lang_list])
-top_5_languages = [i[0] for i in Counter(all_languages).most_common(5)]
-for i in top_5_languages:
+top_10_languages = [i[0] for i in Counter(all_languages).most_common(10)]
+for i in top_10_languages:
     df2["Language_"+i] = df2["Language"].map(lambda x: 1 if i in str(x) else 0)
 ```
 
@@ -160,6 +162,8 @@ Before we get to modeling, we'll take a look at the relationships within out dat
 [![pairplots]({{ site.url }}{{ site.baseurl }}/images/imdb/pairplots.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/pairplots.png)
 
 [![heatmap]({{ site.url }}{{ site.baseurl }}/images/imdb/heatmap.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/heatmap.png)
+
+[![oscar_rating]({{ site.url }}{{ site.baseurl }}/images/imdb/oscar_rating.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/oscar_rating.png)
 
 [![genre_rating]({{ site.url }}{{ site.baseurl }}/images/imdb/genre_rating.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/genre_rating.png)
 
@@ -207,7 +211,7 @@ select.fit(X_train, yc_train)
 X_train_new = select.transform(X_train)
 ```
 
-We got a slight improvement in our score after feature selection:
+We got minimal to no improvement in our score after feature selection:
 
 [![roc_curve_selected]({{ site.url }}{{ site.baseurl }}/images/imdb/roc_curve_selected.png)]({{ site.url }}{{ site.baseurl }}/images/imdb/roc_curve_selected.png)
 
