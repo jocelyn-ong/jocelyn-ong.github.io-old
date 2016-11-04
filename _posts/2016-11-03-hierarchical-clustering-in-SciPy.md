@@ -18,7 +18,7 @@ Today we looked at hierarchical clustering, and while I understood the concept, 
 ## The Concept
 In clustering, our aim is to group some points. Any number of points, in any number of dimensions, into any number of groups. For ease of explanation, we'll look at points in a 2-dimensional space.
 
-Using `sklearn.make_blobs`, we generated some random points (and groups) - each of these points have two attributes/ features, so we can plot them on a 2D plot (see below).
+Using `datasets.make_blobs` in `sklearn`, we generated some random points (and groups) - each of these points have two attributes/ features, so we can plot them on a 2D plot (see below).
 
 ```python
 X, y = make_blobs(n_samples=10,
@@ -74,7 +74,7 @@ Here's a comparison with more points.
 ## Digging deeper into the code
 That all seems nice and easy, right? (It wasn't.)
 
-What does `cluster.hierarchy.linkage` do and what arguments do we have to pass to it? What about `cluster.hierarchy.fcluster`?
+What format does our data have to be in to be able to run `cluster.hierarchy.linkage` on it? 
 
 We read the [documentation](https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.cluster.hierarchy.linkage.html){:target="_blank"}:
 
