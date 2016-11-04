@@ -79,20 +79,20 @@ What does `cluster.hierarchy.linkage` do and what arguments do we have to pass t
 We read the [documentation](https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.cluster.hierarchy.linkage.html){:target="_blank"}:
 
 > scipy.cluster.hierarchy.linkage(y, method='single', metric='euclidean')
-
+>
 > Parameters:  
-
+>
 > y : ndarray  
 > A condensed or redundant distance matrix. A condensed distance matrix is a flat array containing the upper triangular of the distance matrix. This is the form that pdist returns. Alternatively, a collection of mm observation vectors in n dimensions may be passed as an mm by nn array.
-
+>
 > method : str, optional  
 > The linkage algorithm to use. See the Linkage Methods section below for full descriptions.
-
+>
 > metric : str or function, optional  
 > The distance metric to use in the case that y is a collection of observation vectors; ignored otherwise. See the distance.pdist function for a list of valid distance metrics. A custom distance function can also be used. See the distance.pdist function for details.
-
+>
 > Returns:
-
+>
 > Z : ndarray  
 >The hierarchical clustering encoded as a linkage matrix.
 
@@ -124,6 +124,6 @@ This returns an array of the distances between the points which can then be pass
 ## Until next time
 I really hope this post helps you understand the functions a little better. I didn't go through all the functions or parameters, just the ones that tripped me up and I only understood after staring at the source code for a while.
 
-You can view my notebook for this post on [Github](https://github.com/jocelyn-ong/jocelyn-ong.github.io/blob/master/notebooks/hierarchical-clustering.ipynb){:target="_blank"}
+You can view my notebook for this post on [Github](https://github.com/jocelyn-ong/jocelyn-ong.github.io/blob/master/notebooks/hierarchical-clustering.ipynb){:target="_blank"}.
 
 If you have any comments/ questions on this post or if you'd like to discuss further, feel free to [tweet me](https://twitter.com/intent/tweet?text=@joce_ong){:target="_blank"} or [drop me an email](mailto:ongjoce@gmail.com)!
