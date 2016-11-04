@@ -124,4 +124,6 @@ This returns an array of the distances between the points which can then be pass
 ## Until next time
 I really hope this post helps you understand the functions a little better. I didn't go through all the functions or parameters, just the ones that tripped me up and I only understood after staring at the source code for a while.
 
-If you have any comments/ questions on this post or if you'd like to discuss further, feel free to [tweet me](https://twitter.com/intent/tweet?text=@joce_ong) or [drop me an email](mailto:ongjoce@gmail.com)!
+You can view my notebook for this post on [Github](https://github.com/jocelyn-ong/jocelyn-ong.github.io/blob/master/notebooks/hierarchical-clustering.ipynb){:target="_blank"}
+
+If you have any comments/ questions on this post or if you'd like to discuss further, feel free to [tweet me](https://twitter.com/intent/tweet?text=@joce_ong){:target="_blank"} or [drop me an email](mailto:ongjoce@gmail.com)!
