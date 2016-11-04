@@ -124,4 +124,4 @@ This returns an array of the distances between the points which can then be pass
 ## Until next time
 I really hope this post helps you understand the functions a little better. I didn't go through all the functions or parameters, just the ones that tripped me up and I only understood after staring at the source code for a while.
 
-If you have any comments/ questions on this post or if you'd like to discuss further, feel free to [tweet me](https://twitter.com/intent/tweet?via=joce_ong) or [drop me an email](mailto:ongjoce@gmail.com)!
+If you have any comments/ questions on this post or if you'd like to discuss further, feel free to [tweet me](https://twitter.com/intent/tweet?text=@joce_ong) or [drop me an email](mailto:ongjoce@gmail.com)!
