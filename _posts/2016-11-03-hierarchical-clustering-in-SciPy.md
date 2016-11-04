@@ -13,7 +13,7 @@ Understanding the SciPy code behind hierarchical clustering
 {% include toc %}
 
 ## Hierarchical Clustering
-Today we looked at hierarchical clustering, and while I understood the concept, I struggled with trying to understand how the code worked - what goes where and what preprocessing steps are required? Now that I've figured it out (sort of), I want to share my thought process and hopefully help you understand it too.
+Today we looked at hierarchical clustering, and while I understood the concept, I struggled with trying to understand how the code worked - what goes where and what preprocessing steps are required? Now that I've figured it out (sort of), I want to share what I learned with you!
 
 ## The Concept
 In clustering, our aim is to group some points. Any number of points, in any number of dimensions, into any number of groups. For ease of explanation, we'll look at points in a 2-dimensional space.
@@ -122,7 +122,7 @@ y = spatial.distance.squareform(distance_grid)
 This returns an array of the distances between the points which can then be passed into `cluster.hierarchy.linkage`!
 
 ## Until next time
-I really hope this post helps you understand the functions a little better. I didn't go through all the functions or parameters, just the ones that tripped me up and I only understood after staring at the source code for a while.
+I really hope this post helped you understand the functions a little better. I didn't go through all the functions or parameters, just the ones that tripped me up and I only understood after staring at the source code for a while.
 
 You can view my notebook for this post on [Github](https://github.com/jocelyn-ong/jocelyn-ong.github.io/blob/master/notebooks/hierarchical-clustering.ipynb){:target="_blank"}.
 
