@@ -18,3 +18,6 @@
 - times
 - titanic
 - web-scraping
+- scipy
+- clustering
+- unsupervised-learning
