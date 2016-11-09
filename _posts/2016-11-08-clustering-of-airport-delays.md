@@ -227,7 +227,7 @@ Here's a 3-dimensional plot of our delay principal components and the clustering
 
 ## Interpreting our results
 
-To interpret our results, we added the cluster labels from the clustering (we used the results from agglomerative clustering) to our original data. Each metric column (delay, cancellations and diversions) was then plotted for cluster one and cluster two separately to see if we can find out how the clustering was done.
+To interpret our results, we added the cluster labels from the clustering (we used the results from agglomerative clustering) to our original data. Each metric column (delay, cancellations and diversions) was then plotted for cluster 1 and cluster 2 separately to see if we can find out how the clustering was done.
 
 [![cluster1]({{ site.url }}{{ site.baseurl }}/images/airports/cluster1.png)]({{ site.url }}{{ site.baseurl }}/images/airports/cluster1.png)
 
@@ -235,7 +235,7 @@ To interpret our results, we added the cluster labels from the clustering (we us
 
 [![cluster3]({{ site.url }}{{ site.baseurl }}/images/airports/cluster3.png)]({{ site.url }}{{ site.baseurl }}/images/airports/cluster3.png)
 
-In our plots, we can see that in general, cluster 1 has more delays, cancellations and diversions than cluster 2.
+In our plots, we can see that in general, cluster 1 has more delays, cancellations and diversions than cluster 1.
 
 I also plotted one of the columns against region and year to see if there were and discernible patterns there.
 
@@ -243,7 +243,7 @@ I also plotted one of the columns against region and year to see if there were a
 
 [![year_dist]({{ site.url }}{{ site.baseurl }}/images/airports/year_dist.png)]({{ site.url }}{{ site.baseurl }}/images/airports/year_dist.png)
 
-There's no discernible in year, but it seems like cluster one is mainly made up of airports from the Eastern FAA region.
+There's no discernible in year, but it seems like cluster 1 is mainly made up of airports from the Eastern FAA region.
 
 # Round up
 
