@@ -119,4 +119,4 @@ I hope you enjoyed reading about our group lab on the Times Higher Education Uni
 
 I'm looking forward to more group work in the future, it's great hearing ideas from different perspectives. My next post will be about our third project from the Immersive, also our first group project! Stay tuned!
 
-p.s. you can view my notebook for this project on [Github](https://github.com/jocelyn-ong/ga-dsi/blob/master/curriculum/week-03/5.1-regression-challenge/w3d5-regression-challenge-joce.ipynb){:target='_blank'}
+[You can view my notebook for this project here](http://bit.ly/2fzTPSS){:target='_blank'}.

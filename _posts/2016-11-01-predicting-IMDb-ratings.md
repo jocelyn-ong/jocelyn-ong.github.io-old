@@ -274,4 +274,4 @@ I happened to run my models a few times (without text features, with actors and 
 I wish we could have trained our model on a bigger and more varied training set. (Recall: we only worked on the all-time 250 movies on IMDB for this project.) I did try to get more information - I managed to get more movied IDs but it took too long to pull some of the other information. Maybe I'll try it out when I get a more powerful machine.
 
 ## Until Next Time
-I hope you enjoyed reading about movies (I'd rather just watch them), and I do hope I'll have time to work on those next steps! Meanwhile, take a look at the detailed code for this project on [Github](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-06/project-6-jocelyn-ong.ipynb){:target="_blank"}.
+I hope you enjoyed reading about movies (I'd rather just watch them), and I do hope I'll have time to work on those next steps! Meanwhile, [take a look at the detailed code for this project here](http://bit.ly/2g0mnWg){:target="_blank"}.

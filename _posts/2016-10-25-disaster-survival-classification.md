@@ -261,6 +261,6 @@ We've exported our decision tree into an image file and it's massive (many decis
 
 This is a well studied dataset and you can definitely find many posts online exploring it. Despite that, I hope you've enjoyed reading about my exploration of the Titanic dataset! I enjoyed working with it and it was also a good chance to work on my visualization skills.
 
-You can view my notebook for this project [here on GitHub](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-05/code/starter-code/project-5-jocelyn-ong.ipynb){:target='_blank'}.
+[You can view my notebook for this project here](http://bit.ly/2g0mNvv){:target='_blank'}.
 
 Stay tuned for my next post!

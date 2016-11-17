@@ -157,4 +157,4 @@ This would entail pulling job descriptions, identifying important words, and che
 
 Thank you for reading and I hope you've enjoyed reading about what we did this week! I wish I could have gone into more detail on the web scraping, but we can do that in a future post. It's a interesting tool that can get frustrating when you're staring at the HTML and wondering where your information is kept, but when you do get it out, you'll be amazed at what you can get from the web.
 
-p.s. you can view my notebook for this project on [Github](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-04/project-4-glassdoor-amer-thomas-joce.ipynb){:target='_blank'}, and take a look at our presentation on [Prezi](http://prezi.com/xmlqb-q0f0bo/?utm_campaign=share&utm_medium=copy){:target="_blank"}!
+[You can view my notebook for this project here](http://bit.ly/2eJCmYQ){:target='_blank'}, and take a look at our presentation on [Prezi](http://bit.ly/2fIMkqm){:target="_blank"}!

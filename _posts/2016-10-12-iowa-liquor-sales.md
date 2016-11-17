@@ -227,4 +227,4 @@ In addition to the above, we were also provided with another scenario where we w
 
 Thank you for reading and I hope you found the above interesting!
 
-p.s. you can view my notebook for this project on [Github](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-03/starter-code/project-3-jp-joshua-jocelyn-lasso.ipynb)
+[You can view my notebook for this project here](http://bit.ly/2g0pzRB){:target="_blank"}.

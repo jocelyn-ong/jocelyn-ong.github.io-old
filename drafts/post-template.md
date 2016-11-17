@@ -1,30 +1,31 @@
 ---
 tags:
   - DSI
+  - thoughts
+  - collaboration
+  - projects
   - data-science
+  - python
+  - sql
+  - imdb
+  - SAT
+  - eda
+  - billboard
+  - visualizations
+  - regression
+  - glassdoor
+  - classification
+  - times
+  - titanic
+  - web-scraping
+  - scipy
+  - clustering
+  - unsupervised-learning
 ---
 Tagline: 1-liner summary of this post
 
 {% include toc %}
 
-## Introduction
-<!-- - Do not put pictures too high up (messes with the toc) -->
-- origins of the project, reason for doing the project
-### Outline of the whole post
-
-## About the dataset
-### How did we obtain it
-### Description of the data (data dictionary)
-
-## What do we want to do
-
-## Data munging/ data wrangling
-- Methods used
-- Code?
-- Go column by column
+# Introduction
 
 [![alt]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)]({{ site.url }}{{ site.baseurl }}/images/bio-photo.jpg)
-
-## Modeling: generating the model and drawing conclusions
-
-## Round up

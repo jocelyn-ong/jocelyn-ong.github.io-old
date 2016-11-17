@@ -85,4 +85,4 @@ This week, we've looked at how to use Pandas, Seaborn, and Tableau to do a curso
 
 I hope you enjoyed this post, and I look forward to bringing you more insights on data science.
 
-p.s. you can view my notebook for this project on [Github](https://github.com/jocelyn-ong/ga-dsi/blob/master/projects/projects-weekly/project-01/starter-code/project_1_jocelyn_ong.ipynb)
+[You can view my notebook for this project here](http://bit.ly/2g1SEKv){:target="_blank"}.

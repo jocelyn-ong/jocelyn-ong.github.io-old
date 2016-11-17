@@ -74,7 +74,7 @@ Here's a comparison with more points.
 ## Digging deeper into the code
 That all seems nice and easy, right? (It wasn't.)
 
-What format does our data have to be in to be able to run `cluster.hierarchy.linkage` on it? 
+What format does our data have to be in to be able to run `cluster.hierarchy.linkage` on it?
 
 We read the [documentation](https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.cluster.hierarchy.linkage.html){:target="_blank"}:
 
@@ -124,6 +124,6 @@ This returns an array of the distances between the points which can then be pass
 ## Until next time
 I really hope this post helped you understand the functions a little better. I didn't go through all the functions or parameters, just the ones that tripped me up and I only understood after staring at the source code for a while.
 
-You can view my notebook for this post on [Github](https://github.com/jocelyn-ong/jocelyn-ong.github.io/blob/master/notebooks/hierarchical-clustering.ipynb){:target="_blank"}.
+[You can view my notebook here](http://bit.ly/2f3UNTm){:target="_blank"}.
 
 If you have any comments/ questions on this post or if you'd like to discuss further, feel free to [tweet me](https://twitter.com/intent/tweet?text=@joce_ong){:target="_blank"} or [drop me an email](mailto:ongjoce@gmail.com)!
