@@ -227,4 +227,4 @@ In addition to the above, we were also provided with another scenario where we w
 
 Thank you for reading and I hope you found the above interesting!
 
-[You can view my notebook for this project here](http://bit.ly/2g0pzRB){:target="_blank"}.
+[You can view my notebook for this project here](http://bit.ly/2gAwr8F){:target="_blank"}.

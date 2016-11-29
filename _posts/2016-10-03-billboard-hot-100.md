@@ -164,4 +164,4 @@ This week, we looked at how to clean data to get it ready for analysis and how t
 
 I hope you enjoyed this post, and I look forward to bringing you more insights on data science.
 
-[You can view my notebook for this project here](http://bit.ly/2g0t7TN){:target='_blank'}.
+[You can view my notebook for this project here](http://bit.ly/2fZoENW){:target='_blank'}.
