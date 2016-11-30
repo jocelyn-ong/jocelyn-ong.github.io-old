@@ -119,4 +119,4 @@ I hope you enjoyed reading about our group lab on the Times Higher Education Uni
 
 I'm looking forward to more group work in the future, it's great hearing ideas from different perspectives. My next post will be about our third project from the Immersive, also our first group project! Stay tuned!
 
-[You can view my notebook for this project here](http://bit.ly/2gAvq0p){:target='_blank'}.
+[You can view my notebook for this project here](https://github.com/jocelyn-ong/data-science-projects/blob/master/ga-dsi-class-challenges/times.ipynb){:target='_blank'}.

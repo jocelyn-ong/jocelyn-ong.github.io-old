@@ -251,4 +251,4 @@ This project was difficult for me - I took a long time trying to figure out what
 
 Our goal was to determine if there there were any clusters in the airports based on their delays, and from there, see if there were any underlying reasons for the delays. Based on our analysis, we did manage to find a cluster of airports that were usually had more delays than others, and a lot of them were in the Eastern FAA region. Our next step is to then go further into this to see if there are any conditions specific to the Eastern FAA region that could have caused this (weather maybe?).
 
-Thank you for reading this post about clustering airport delays! [You can view my notebook here](http://bit.ly/2fGwwTK){:target="_blank"} - please feel free to download it to play around with the iPython widget!
+Thank you for reading this post about clustering airport delays! [You can view my notebook here](https://github.com/jocelyn-ong/data-science-projects/blob/master/ga-dsi-weekly-projects/project-7-airports.ipynb){:target="_blank"} - please feel free to download it to play around with the iPython widget!
