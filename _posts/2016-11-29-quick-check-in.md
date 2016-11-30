@@ -42,4 +42,4 @@ I'm hoping to do more short posts on tools that we've learned, maybe a small tut
 
 # Until next time
 
-Well, thanks for reading this (it looks more like a post to help me keep track of my to-do list) and I hope you're excited about my side projects!
+Well, thanks for reading this (it looks more like a post to help me keep track of my to-do list) and I hope you're excited about my side projects! And for now, it's back to more research and reading for me.
