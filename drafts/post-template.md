@@ -21,6 +21,7 @@ tags:
   - scipy
   - clustering
   - unsupervised-learning
+  - computer-vision
 ---
 Tagline: 1-liner summary of this post
 

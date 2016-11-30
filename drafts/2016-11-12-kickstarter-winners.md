@@ -15,7 +15,7 @@ Exploring the top Kickstarter campaigns
 
 # Introduction
 
-This week we were given a surprise group project! No topic, no groups, no rules (almost) - find your group mates, find some data, and do something with it! This time our groups were a little bigger - I got grouped with Sara, Kristen, [JP](https://jpfreeley.github.io/){:target="_blank"}, [Michael](https://mroman09.github.io/){:target="_blank"} and [Peida (Peter)](https://peidacai.github.io/about/){:target="_blank"}.
+Couple of weeks ago we were given a surprise group project! No topic, no groups, no rules (almost) - find your group mates, find some data, and do something with it! This time our groups were a little bigger - I got grouped with Sara, Kristen, [JP](https://jpfreeley.github.io/){:target="_blank"}, [Michael](https://mroman09.github.io/){:target="_blank"} and [Peida (Peter)](https://peidacai.github.io/about/){:target="_blank"}.
 
 # Finding our data
 
