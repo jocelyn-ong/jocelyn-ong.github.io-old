@@ -2,7 +2,6 @@
 tags:
   - DSI
   - thoughts
-  - projects
   - data-science
   - computer-vision
 ---
