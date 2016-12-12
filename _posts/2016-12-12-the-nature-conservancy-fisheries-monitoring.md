@@ -9,7 +9,7 @@ tags:
   - classification
   - computer-vision
 ---
-Tagline: Using machine learning algorithms to identify species of fish
+Using machine learning algorithms to identify species of fish
 
 {% include toc %}
 
