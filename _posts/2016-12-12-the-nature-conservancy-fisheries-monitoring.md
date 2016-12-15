@@ -97,6 +97,6 @@ I wanted to know how this would perform on random pictures of fishes - not too w
 
 I would like to explore object detection before feature extraction - if we are able to pinpoint where the fish is in the picture, we should be able to extract the features of the fish, and not its surroundings.
 
-Thanks for taking the time to read about my capstone - you can view my presentation on [Prezi](http://prezi.com/q9ruodzzn6nr/?utm_campaign=share&utm_medium=copy).
+Thanks for taking the time to read about my capstone - you can view my presentation on [Prezi](http://prezi.com/q9ruodzzn6nr/?utm_campaign=share&utm_medium=copy){:target="_blank"}.
 
 > “People ask: Why should I care about the ocean? Because the ocean is the cornerstone of earth’s life support system, it shapes climate and weather. It holds most of life on earth. 97% of earth’s water is there. It’s the blue heart of the planet-we should take care of our heart. It’s what makes life possible for us. We still have a really good chance to make things better than they are. They won’t get better unless we take the action and inspire others to do the same thing. No one is without power. Everybody has the capacity to do something.” – Sylvia Earle
