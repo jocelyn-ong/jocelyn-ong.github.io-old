@@ -167,3 +167,7 @@ Sometimes, you may have some files that have the same starting and different end
 - `this_is_file_two.txt`
 
 In this case, if you typed `th` and hit `tab`, autocomplete will give you `this_is_file_` and wait for you to continue the rest of the file name (or this `tab` twice).
+
+# Until next time
+
+Thanks for taking the time to read this and I hope that it's useful to you! Stay tuned to my next post in the series and follow me on [Twitter](https://twitter.com/joce_ong){:target="_blank"} where I share interesting data related posts!
