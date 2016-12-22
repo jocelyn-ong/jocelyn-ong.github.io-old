@@ -13,4 +13,4 @@ I'm a Singaporean taking a short break from work and exploring the United States
 
 This blog is for write-ups of my projects from the Immersive, insights gained during my data science journey, and I've also recently started a series on data science notes. I hope you enjoy reading them!
 
-[Read more about how I started my data science journey!](https://jocelyn-ong.github.io/hello-data-science/){:target='_blank'}.
+[Read more about how I started my data science journey!](https://jocelyn-ong.github.io/hello-data-science/){:target='_blank'}
