@@ -7,10 +7,10 @@ permalink: /about/
 
 Hello! I'm Jocelyn!
 
-I'm an aspiring data scientist, a graduate of the part-time Data Science course and currently enrolled in the Data Science Immersive, both at General Assembly New York. My prior experience includes corporate income tax compliance and advisory for small and medium enterprises as well as multi-national corporations.
+I'm a graduate of the part-time Data Science course and the Data Science Immersive, both at General Assembly New York. My prior experience includes corporate income tax compliance and advisory for small and medium enterprises as well as multi-national corporations.
 
-I'm a Singaporean currently taking a short break from work, and I'm now in New York, partly to attend the Immersive, and hopefully also to explore the United States of America.
+I'm a Singaporean taking a short break from work and exploring the United States of America. I used part of this time to enroll in the two data science courses (above) and learn more about the field. Currently, I'm doing a lot of self learning after the courses to ensure that I keep my skills sharp and also to learn about more advanced tools that the courses didn't cover.
 
-This blog is for write-ups of my projects from the Immersive as well as any insights during the my course of learning data science. I hope you enjoy reading them!
+This blog is for write-ups of my projects from the Immersive, insights gained during my data science journey, and I've also recently started a series on data science notes. I hope you enjoy reading them!
 
-Read more about how I started in [my first blog post](https://jocelyn-ong.github.io/hello-data-science/){:target='_blank'}.
+[Read more about how I started my data science journey!](https://jocelyn-ong.github.io/hello-data-science/){:target='_blank'}.
