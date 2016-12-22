@@ -166,7 +166,7 @@ Sometimes, you may have some files that have the same starting and different end
 - `this_is_file_one.txt`
 - `this_is_file_two.txt`
 
-In this case, if you typed `th` and hit `tab`, autocomplete will give you `this_is_file_` and wait for you to continue the rest of the file name (or this `tab` twice).
+In this case, if you typed `th` and hit `tab`, autocomplete will give you `this_is_file_` and wait for you to continue the rest of the file name (or hit `tab` twice to see the list of possible files).
 
 # Until next time
 
