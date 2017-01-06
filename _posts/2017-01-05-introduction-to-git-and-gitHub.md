@@ -17,12 +17,12 @@ Data Science Notes Series: Introduction to Git and GitHub
 - Version control software
 - Open source
 - Developed by Linus Torvalds (creator of the Linux operating system kernel)
-- https://git-scm.com{:target="_blank"}
+- [https://git-scm.com](https://git-scm.com){:target="_blank"}
 
 ## What is GitHub
 
 > GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.  
-*Source: https://guides.github.com/activities/hello-world/{:target="_blank"}*
+*Source: [https://guides.github.com/activities/hello-world/](https://guides.github.com/activities/hello-world/){:target="_blank"}*
 
 - GitHub uses Git for version control
 
@@ -60,7 +60,7 @@ Data Science Notes Series: Introduction to Git and GitHub
 
 ## Create a GitHub account
 
-- Go to https://github.com{:target="_blank"} and create an account
+- Go to [https://github.com](https://github.com){:target="_blank"} and create an account
     - The personal/ free account should be sufficient
 
 ## Set up GitHub authentication
