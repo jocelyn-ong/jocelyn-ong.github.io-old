@@ -1,6 +1,5 @@
 ---
 tags:
-  - projects
   - data-science
   - data-science-notes
   - github
