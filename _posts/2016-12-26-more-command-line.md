@@ -70,6 +70,10 @@ To create an alias, we'll need to open up our bash profile. In the command line,
 
 Now every time I run `mmf` in the command line, a folder called `my_folder` will be created in my current working directory.
 
+# Making your command line pretty
+
+If you'd like to change the colors of your terminal, check out [this link](http://osxdaily.com/2013/02/05/improve-terminal-appearance-mac-os-x/)!
+
 # More command line practice
 
 Knowing just the basic commands should be sufficient for now, but if you want to learn more, try out the [command line course on Codecademy](https://www.codecademy.com/learn/learn-the-command-line).
