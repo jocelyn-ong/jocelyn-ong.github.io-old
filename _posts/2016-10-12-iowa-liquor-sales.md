@@ -1,6 +1,6 @@
 ---
 tags:
-  - DSI
+  - dsi
   - collaboration
   - projects
   - data-science

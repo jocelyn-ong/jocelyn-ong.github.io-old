@@ -1,10 +1,10 @@
 ---
 tags:
-  - DSI
+  - dsi
   - projects
   - data-science
   - python
-  - SAT
+  - sat
   - eda
   - visualizations
 ---

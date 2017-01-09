@@ -1,6 +1,6 @@
 ---
 tags:
-  - DSI
+  - dsi
   - thoughts
   - data-science
   - computer-vision

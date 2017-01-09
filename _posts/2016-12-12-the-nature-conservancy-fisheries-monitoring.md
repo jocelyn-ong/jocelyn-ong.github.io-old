@@ -1,6 +1,6 @@
 ---
 tags:
-  - DSI
+  - dsi
   - projects
   - data-science
   - python
