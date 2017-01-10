@@ -20,6 +20,7 @@ Before we install IPython and Jupyter notebooks, we'll need to install some `hel
     - Keep the default options.
 
 Now in terminal, try running `jupyter-notebook` in terminal (preferably in your root user folder) - if it was successfully installed it, a new tab or window should pop up in your default web browser. Otherwise, check out the [documentation](http://jupyter.readthedocs.io/en/latest/install.html){:target="_blank"} for troubleshooting.
+
 - `pip` should also have been installed if the above was done correctly. Test it by running `pip install -U pip` in terminal. Otherwise, check out the [pip documentation](https://pip.pypa.io/en/stable/installing/#upgrading-pip){:target="_blank"} for troubleshooting.
 
 The tab that pops up should look pretty much like a folder view. The reason for booting Jupyter notebook is that you will be able to access all child folders of the folder you're currently in, but you cannot access its parents via the browser.
@@ -33,11 +34,13 @@ Let's create a new notebook. In the top right of your tab, you should see a butt
 ## Code
 
 A new tab should open with your new untitled notebook, with a single empty cell.
+
 - By default, the cell is formatted to be a `code` cell. That means that what ever you type into it has to be a piece of valid code (Python code in our case) for Jupyter notebook to run it successfully.
 
 ## Markdown
 
 Select the cell (so that you see your blinking cursor in it), and look for the `Cell` button in your toolbar. Under it, you should see `Cell Type`, then select `Markdown`.
+
 - `Markdown` is a text format. Read more about it [here](https://daringfireball.net/projects/markdown/){:target="_blank"}.
 - Now you can type any text into the cell, and no error will be thrown when you run it.
 
@@ -52,11 +55,13 @@ It's useful for when you want to retain a piece of code in your notebook but you
 # Navigation shortcuts
 
 Everything in a Jupyter notebook should be a accessible via point-and-click, but sometimes, it's much easier to work with keyboard shortcuts. Here are some of my most used ones:
+
 - `shift + return`: Run cell
 - `return`: Enter edit mode on selected cell
 - `Esc`: Exit edit mode on selected cell
 
 For the following shortcuts to work, you must not be in edit mode
+
 - `a`: Add one cell above selected cell
 - `b`: Add one cell below selected cell
 - `s`: Save notebook

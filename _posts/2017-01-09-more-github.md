@@ -48,6 +48,7 @@ To learn more about branches, check out the [documentation](https://git-scm.com/
 To work with your different branches, you'll need to use `git checkout`. `git checkout` can also be used to work with a previous version of your work.
 
 If you remember, we update our GitHub repo by committing our local changes to the server - there's a record of all the commits that we made previously. You can view all of the commits in the same toolbar that we used above, by clicking on `commits`. Each commit has a 'link', which is what we'll use to tell GitHub which point we want to revert to.
+
 - Note: your local copy gets written over when you run `git checkout`
 - Running `git checkout LINK` in terminal (in a valid GitHub-linked folder) will revert all files to the state in that commit
     - To revert just one file, run `git checkout LINK FILENAME`
@@ -67,6 +68,7 @@ The way Git explains it, when you're working in Git, there are three work spaces
 `git reset` works by undoing `git add` and `git commit`.
 
 There are three types of resets:
+
 - `git reset hard HEAD~`: `hard` means undo changes in your local, staging, and server. i.e. your local file will be overwritten! We're usually advised not to do this.
 - `git reset soft HEAD~`: `soft` means undo changes only to the server. Your local file is unchanged, and any files in the staging area are also unaffected.
 - `git reset mixed HEAD~`: `mixed` means undo changes only in the staging area and the server, your local file is unchanged. This is also the default, so if you run `git reset HEAD~` without the word `mixed`, it is assumed that the reset mode is `mixed`
