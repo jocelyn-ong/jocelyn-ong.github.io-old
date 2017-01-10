@@ -87,5 +87,4 @@ If you want to learn more about `git reset`, the [Git blog has a great post on t
 
 And that should be enough for you to get started with Git and GitHub! In our next post, we'll learn about IPython and Jupyter notebooks - the notebook will be where we'll be doing most of our code work, then we'll be ready to move on to some basic Python!
 
-
 Thanks for taking the time to read this and I hope that it was useful to you! Stay tuned to my next post in the series and follow me on [Twitter](https://twitter.com/joce_ong){:target="_blank"} where I share interesting data related posts!
