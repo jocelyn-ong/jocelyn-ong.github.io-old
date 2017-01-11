@@ -198,12 +198,6 @@ Note that it doesn't add a space in between each string, we'll have to do that o
 
 
 
-Do you think subtraction will work with strings? Try it out!
-
-
-```python
-
-```
 
 ## Multiply
 
