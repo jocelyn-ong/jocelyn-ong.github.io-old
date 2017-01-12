@@ -151,6 +151,8 @@ Square brackets are used to slice strings (read: get some part of the string). I
 x = "Hello World"
 ```
 
+Python variable names can start with letters or underscores - don't start with numbers. However, you can include numbers elsewhere in the name.
+
 # Math with Python: `+, -, *, **, /, //, %, ()`
 
 ## Add
