@@ -503,4 +503,4 @@ I reorganized my Python notes a little, and we'll have three more notebooks on P
 - Functions and classes
 - External files and libraries
 
-This notebook with solutions can be viewed [here](http://nbviewer.jupyter.org/github/jocelyn-ong/data-science-notes/blob/master/content/04-basic-python/solutions/0402-python-containers-solutions.ipynb).
+This notebook with solutions can be viewed [here](http://nbviewer.jupyter.org/github/jocelyn-ong/data-science-notes/blob/master/content/04-basic-python/solutions/0402-python-containers-solutions.ipynb){:target="_blank"}.
