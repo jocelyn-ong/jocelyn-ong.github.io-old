@@ -1,0 +1,18 @@
+---
+layout: archive
+permalink: /data-science-notes/
+title: "Data Science Notes Series"
+author_profile: true
+---
+
+{% include base_path %}
+{% include group-by-array collection=site.posts field="tags" %}
+
+<h2 id="dsnotes" class="archive__subtitle">data-science-notes</h2>
+
+
+{% assign posts = data-science-notes %}
+{% for post in posts %}
+  {% include archive-single.html %}
+{% endfor %}
+<a href="#">Back to Top</a>
