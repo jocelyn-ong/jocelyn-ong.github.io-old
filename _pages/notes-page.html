@@ -16,3 +16,7 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 <a href="#">Back to Top</a>
+
+{% for tag in group_names %}
+  group_items[forloop.index0]
+{% endfor %}
