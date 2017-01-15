@@ -11,7 +11,7 @@ author_profile: true
 <h2 id="dsnotes" class="archive__subtitle">data-science-notes</h2>
 
 
-{% assign posts = data-science-notes %}
+{% assign posts = group_items[data-science-notes] %}
 {% for post in posts %}
   {% include archive-single.html %}
 {% endfor %}
