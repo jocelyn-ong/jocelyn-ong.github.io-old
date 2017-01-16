@@ -237,6 +237,7 @@ me.initials
 # Practice
 
 For practice, we'll create a class with some functions.
+
 - Create a class called Notebook
 - Define the __init__ method to take one argument: subject
 - Define the __str__ method to return "This is my (subject) notebook." and replace (subject) with whatever subject you typed
