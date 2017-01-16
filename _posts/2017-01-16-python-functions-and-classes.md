@@ -239,11 +239,11 @@ me.initials
 For practice, we'll create a class with some functions.
 
 - Create a class called Notebook
-- Define the __init__ method to take one argument: subject
-- Define the __str__ method to return "This is my (subject) notebook." and replace (subject) with whatever subject you typed
-- Define a method called add_note that takes one argument that is a string and adds it to a dictionary called notes
+- Define the `__init__` method to take one argument: subject
+- Define the `__str__` method to return "This is my (subject) notebook." and replace (subject) with whatever subject you typed
+- Define a method called `add_note` that takes one argument that is a string and adds it to a dictionary called notes
     - The dictionary should have key-value pairs where the string argument is the value, and the keys are integers starting from 1, and increasing by 1 each time you add a new note
-- Define a method called print_notes that prints out your notes line by line in numerical order of key
+- Define a method called `print_notes` that prints out your notes line by line in numerical order of key
     - The format to be printed should be"  
     "1. This is your first note"  
     "2. This is your second note"  
