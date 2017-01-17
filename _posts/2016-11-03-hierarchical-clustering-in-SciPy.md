@@ -4,7 +4,7 @@ tags:
   - data-science
   - python
   - scipy
-  - visualization
+  - visualizations
   - clustering
   - unsupervised-learning
 ---
