@@ -236,4 +236,4 @@ Let's try importing some of the libraries we'll be using later on.
 
 # Up next
 
-And that's it for basic Python! We went a little fast and mostly had only one or two examples for each topic, but we'll be using it a lot as we go along and get our practice there. If you'd like a more in depth look into Python and more practice, I learnt it on [Coursera](https://www.coursera.org/learn/python) and by following the exercises [here](https://learnpythonthehardway.org). They might take you a while to run through but you will have a good handle on Python once you're done with them.
+And that's it for basic Python! We went a little fast and mostly had only one or two examples for each topic, but we'll be using it a lot as we go along and get our practice there. If you'd like a more in depth look into Python and more practice, I learnt it on [Coursera](https://www.coursera.org/learn/python){:target="_blank"} and by following the exercises [here](https://learnpythonthehardway.org){:target="_blank"}. They might take you a while to run through but you will have a good handle on Python once you're done with them.
