@@ -2,7 +2,7 @@
 tags:
   - data-science
   - data-science-notes
-  - python
+  - stats
 ---
 Data Science Notes Series: Basic Statistics
 
