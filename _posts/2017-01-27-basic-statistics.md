@@ -3,6 +3,10 @@ tags:
   - data-science
   - data-science-notes
   - stats
+  - python
+  - numpy
+  - scipy
+  - pandas
 ---
 Data Science Notes Series: Basic Statistics
 

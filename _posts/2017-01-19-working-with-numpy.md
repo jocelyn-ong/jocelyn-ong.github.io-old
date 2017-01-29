@@ -3,6 +3,7 @@ tags:
   - data-science
   - data-science-notes
   - python
+  - numpy
 ---
 Data Science Notes Series: NumPy
 
