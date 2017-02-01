@@ -28,15 +28,15 @@ Then you see (p > 0.05) and (p < 0.05) - they're talking about p-values, which w
 
 # Hypothesis Testing
 
-In hypothesis testing, we need a null hypothesis ($H_0$) as well as an alternative hypothesis ($H_1$). The null hypothesis is the statement that states that there is no relationship between what you're testing and the outcome. So in our jellybean example:
+In hypothesis testing, we need a null hypothesis (H<sub>0</sub>) as well as an alternative hypothesis (H<sub>1</sub>). The null hypothesis is the statement that states that there is no relationship between what you're testing and the outcome. So in our jellybean example:
 
-$H_0 = "There\ is\ no\ relationship\ between\ jellybeans\ and\ acne."$
+H<sub>0</sub> = "There is no relationship between jellybeans and acne."
 
 And the alternative hypothesis is the 'opposite' of the null hypothesis.
 
-$H_1 = "There\ is\ a\ relationship\ between\ jellybeans\ and\ acne."$
+H<sub>1</sub> = "There is a relationship between jellybeans and acne."
 
-And the statement that we're trying to prove or disprove is $H_0$. The alternative hypothesis is usually the more difficult statement to prove, but if we can disprove $H_0$, then there's a chance that $H_1$ might be true. (Note that we don't say that just because $H_0$ is false, therefore $H_1$ is true.)
+And the statement that we're trying to prove or disprove is H<sub>0</sub>. The alternative hypothesis is usually the more difficult statement to prove, but if we can disprove H<sub>0</sub>, then there's a chance that H<sub>1</sub> might be true. (Note that we don't say that just because H<sub>0</sub> is false, therefore H<sub>1</sub> is true.)
 
 # P-value
 
@@ -54,11 +54,11 @@ Let's look at a simpler example (instead of jellybeans and acne).
 
 Flip a coin. Assuming it's not a trick coin, you've got either a heads or a tails. Let's say we flipped the coin 30 times, and got 20 heads. Now we want to test if the coin is a fair coin.
 
-Our null hypothesis, $H_0$, is that the coin is fair. And the alternative hypothesis, $H_1$, is that it's a biased coin.
+Our null hypothesis, H<sub>0</sub>, is that the coin is fair. And the alternative hypothesis, H<sub>1</sub>, is that it's a biased coin.
 
 If the coin is fair, we would expect the chance of getting heads and tails to be 50-50. (Note that this doesn't mean that if we flipped a coin 30 times, we would always get 15 heads and 15 tails - but if we did it 10000 times, and repeated that 10000 times, we'd expect to see a normal distribution on the number of heads we got, with its peak being around 5000.)
 
-So to test $H_0$, we need to set up an experiment. We need to flip the coin 30 times, and repeat that many times (say e.g. 10000). Each repeat is a trial, and for each trial, we record the number of heads we get.
+So to test H<sub>0</sub>, we need to set up an experiment. We need to flip the coin 30 times, and repeat that many times (say e.g. 10000). Each repeat is a trial, and for each trial, we record the number of heads we get.
 
 Let's simulate that.
 
@@ -135,7 +135,7 @@ pval * 100
 
 
 
-In the above example, our p-value is 4.78%. Meaning to say, if the coin we flipped earlier was fair, there was only a 4.78% chance that we would get 20 heads out of 30 (i.e. low). It is low enough that we can reject $H_0$ and say that the coin is not fair.
+In the above example, our p-value is 4.78%. Meaning to say, if the coin we flipped earlier was fair, there was only a 4.78% chance that we would get 20 heads out of 30 (i.e. low). It is low enough that we can reject H<sub>0</sub> and say that the coin is not fair.
 
 ## Problem with p-values
 
