@@ -3,6 +3,10 @@ tags:
   - data-science
   - data-science-notes
   - stats
+  - python
+  - visualizations
+  - matplotlib
+  - seaborn
 ---
 Data Science Notes Series: Hypothesis Testing, P-values and Confidence Intervals
 
@@ -101,8 +105,6 @@ plt.savefig("seaborn_distplot.png")
 
 [![seaborn_distplot]({{ site.url }}{{ site.baseurl }}/images/ds-notes/stats/seaborn_distplot.png)]({{ site.url }}{{ site.baseurl }}/images/ds-notes/stats/seaborn_distplot.png)
 
-
-
 ```python
 # Calculate p-value
 # We want the probability of getting at least 20 heads in 30 coin flips
@@ -155,8 +157,6 @@ plt.savefig("pval_dist.png");
 ```
 
 [![pval_dist]({{ site.url }}{{ site.baseurl }}/images/ds-notes/stats/pval_dist.png)]({{ site.url }}{{ site.baseurl }}/images/ds-notes/stats/pval_dist.png)
-![png](output_20_0.png)
-
 
 Look at that! We got a range of p-values, and some of them were above 0.05! Granted, it looks like you're more likely to get something below 0.05, so it's more likely that you would reject the null hypothesis than fail to reject it. But it's there, there's a chance that you might have gotten a p-value above 0.05 and failed to reject the null hypothesis.
 
