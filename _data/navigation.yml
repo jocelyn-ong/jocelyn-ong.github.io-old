@@ -6,5 +6,7 @@ main:
     url: /posts-archive/
   - title: "Tags"
     url: /tags/
-  - title: "Data Science Notes"
+  - title: "Projects"
+    url: https://github.com/jocelyn-ong/data-science-projects
+  - title: "Notes"
     url: https://github.com/jocelyn-ong/data-science-notes
