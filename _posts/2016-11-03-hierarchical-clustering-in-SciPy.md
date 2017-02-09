@@ -7,6 +7,7 @@ tags:
   - visualizations
   - clustering
   - unsupervised-learning
+  - projects
 ---
 Understanding the SciPy code behind hierarchical clustering
 

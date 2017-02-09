@@ -2,7 +2,7 @@
 tags:
   - dsi
   - data-science
-  - project
+  - projects
   - python
   - regression
   - classification
