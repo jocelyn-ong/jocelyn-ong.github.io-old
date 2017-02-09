@@ -35,7 +35,7 @@ So there are a few parts to this project:
 
 # How to play blackjack
 
-I'm sure there are lots of great websites out there teaching you how to play blackjack in LV, but I decided to put a link to [Las Vegas How-To](http://www.lasvegas-how-to.com/blackjack.php){:target="_blank"} because that's one of the first few that pop up on google and it's what I refer to.
+I'm sure there are lots of great websites out there teaching you how to play blackjack in LV, but I decided to use the guide on [Las Vegas How-To](http://www.lasvegas-how-to.com/blackjack.php){:target="_blank"} because that's one of the first few that pop up on google.
 
 So basic game of blackjack:
 
@@ -55,3 +55,22 @@ So basic game of blackjack:
 Notice the soft 17. In blackjack, the Ace can be 1 or 11 points. How to decide whether it's a 1 or 11? By default, it's 11 unless the 11 causes the hand to bust. If it does, then it's a 1. If the Ace is being counted as 11 points, it's considered a soft hand.
 
 ## And the recommended strategy
+
+According to [Las Vegas How-To](http://www.lasvegas-how-to.com/blackjack.php){:target="_blank"}, in general, you want to:
+
+- Stand on 17 or more
+- If you have 12-16 points (inclusive), and the dealer is showing 16 or less, hit
+  - I believe the assumption is that the dealer's closed card always has a value of 10
+    - So 16 or less, means if their open card is 6 or below
+- Always split 8's
+- Double down on 11 if the dealer's open card is 7 or less
+- If you have 11 or lower, always hit
+  - It's not possible for you to bust
+
+Some other tips (which seem to be for slightly more advanced players):
+
+- If you have 17 points and the dealer shows 7 or higher, consider hitting
+  - The chance of you busting is very high
+  - But if his open card is 7 or higher, and assuming the closed card is 10, you're going to lose anyway
+- If you have 12-16 points (inclusive), and the dealer is showing 2 or 3, consider hitting
+- If you have a soft hand (Ace that is counted as 11 points), consider hitting to get a better hand
