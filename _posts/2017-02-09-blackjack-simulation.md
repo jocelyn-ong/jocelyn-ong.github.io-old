@@ -17,19 +17,13 @@ It's essentially a game of chance, but I'm really skeptical when it comes to cas
 
 So I thought, hey I've got the tools, let's look at the numbers and see what they say.
 
-# Getting the data
-
-I believe if you google "blackjack dataset", you should be able to find lots of different data sets on the web. But I wanted to create my own - we should be able to simulate a blackjack game since it's just a game of chance (like flipping a coin).
-
-It was more difficult than I thought. And every time I changed my mind about what data I needed, I had to generate my dataset all over again.
-
 # Project details
 
 So there are a few parts to this project:
 
 - How to play blackjack
   - What's the recommended strategy
-- Simulate a blackjack game
+- Get the data
 - Exploratory analysis of the dataset
 - Can we use machine learning to come up with a strategy that's better than the current recommended strategy?
 
@@ -37,7 +31,7 @@ So there are a few parts to this project:
 
 I'm sure there are lots of great websites out there teaching you how to play blackjack in LV, but I decided to use the guide on [Las Vegas How-To](http://www.lasvegas-how-to.com/blackjack.php){:target="_blank"} because that's one of the first few that pop up on google.
 
-So basic game of blackjack:
+So a basic game of blackjack:
 
 - Aim: Try to get as close to 21 as possible without going over
   - If you go over 21, it's a bust and you automatically lose
@@ -74,3 +68,50 @@ Some other tips (which seem to be for slightly more advanced players):
   - But if his open card is 7 or higher, and assuming the closed card is 10, you're going to lose anyway
 - If you have 12-16 points (inclusive), and the dealer is showing 2 or 3, consider hitting
 - If you have a soft hand (Ace that is counted as 11 points), consider hitting to get a better hand
+
+# Getting the data
+
+I believe if you google "blackjack dataset", you should be able to find lots of different datasets on the web. But I wanted to create my own - we should be able to simulate a blackjack game since it's just a game of chance (like flipping a coin).
+
+It was more difficult than I thought. And every time I changed my mind about what data I needed, I had to generate my dataset all over again.
+
+__What we need:__
+
+- To be able to generate a 'deck' of cards that we can shuffle and deal from
+- To be able to calculate points given a hand of cards
+- To be able to automate a game
+
+__Problems/ points to consider:__
+
+- Many casinos use multiple decks of 52 cards to play blackjack
+- Do we shuffle in between hands or do we play till the 'deck' has less than a certain number of cards?
+- How do we code for the number of points to attribute to an Ace?
+- Can we code in the recommended strategy so that we can automate the game?
+
+# Starting the coding process
+
+I started this project about slightly more than a week back, and I started off in a jupyter notebook, just throwing pieces of code in as and when I thought of them. After a while, I started 'losing' things, code was getting messy and I had to go through the thought process again when I reread the code - not going to work!
+
+So it was time for a clean up:
+
+- Notebook for planning
+  - What are we trying to find out
+  - How to play blackjack
+  - Strategies
+  - Risks and assumptions
+  - Recap of questions with more detail
+
+- Notebook for game simulation
+  - Code requirements
+  - Code the deck
+  - Code the points calculator
+  - Code the game
+  - Test that our game works correctly
+
+- Notebook for data analysis
+
+- Notebook for machine learning
+
+# What's next
+
+I'll be spending some time on this project - follow along in my [data science projects repo](https://github.com/jocelyn-ong/data-science-projects/tree/master/others/blackjack){:target="_blank"}! The notebooks are changing all the time because I'm changing my mind all the time. My dataset will also be available there so feel free to download it (or the code to generate it) - although it might change too - and play around with it.
