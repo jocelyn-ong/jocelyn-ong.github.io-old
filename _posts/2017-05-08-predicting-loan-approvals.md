@@ -19,7 +19,7 @@ We look at common details between loans rejected and loans approved to see if we
 
 Based on our regression analysis, we find that the purpose of the loan and the employment length of the applicant have the greatest effect on whether a loan is approved. The loan amount actually has the smallest impact. So it doesn't mean that just because you're borrowing a small amount, you're more likely to have your loan approved.
 
-We also performed a regression analysis with purpose dummy variables, and found that stating "Other" or "Car" are both quite detrimental to your loan approval.
+We also performed a regression analysis with purpose dummy variables, and found that stating "Car" can be quite detrimental to your loan approval.
 
 # About the data
 
