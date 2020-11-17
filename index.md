@@ -1,3 +1,7 @@
+---
+author_profile: true
+---
+
 [hello data science](_posts/2016-09-19-hello-data-science.md)
 
 [SAT scores in the united states](_posts/2016-09-26-SAT-scores-in-the-united-states.md)
