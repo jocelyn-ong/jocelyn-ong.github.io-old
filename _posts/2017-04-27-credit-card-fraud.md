@@ -5,6 +5,7 @@ tags:
   - python
   - classification
   - neuralnets
+author: Jocelyn Ong
 ---
 Detecting credit card fraud cases using anonymized data
 

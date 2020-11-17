@@ -4,6 +4,7 @@ tags:
   - python
   - visualizations
   - math
+author: Jocelyn Ong
 ---
 Visualization of prime numbers - is there a pattern?
 

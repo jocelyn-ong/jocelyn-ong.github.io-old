@@ -8,6 +8,7 @@ tags:
   - visualizations
   - classification
   - computer-vision
+author: Jocelyn Ong
 ---
 Using machine learning algorithms to identify species of fish
 

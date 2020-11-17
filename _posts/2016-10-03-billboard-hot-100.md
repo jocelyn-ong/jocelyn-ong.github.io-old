@@ -7,6 +7,7 @@ tags:
   - billboard
   - eda
   - visualizations
+author: Jocelyn Ong
 ---
 What can we tell about the songs on the Billboard Hot 100?
 

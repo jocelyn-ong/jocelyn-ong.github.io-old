@@ -4,6 +4,7 @@ tags:
   - data-science
   - python
   - classification
+author: Jocelyn Ong
 ---
 Predicting whether a loan application to Lending Club will be approved
 

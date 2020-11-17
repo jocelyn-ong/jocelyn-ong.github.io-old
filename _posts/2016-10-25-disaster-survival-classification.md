@@ -8,6 +8,7 @@ tags:
   - titanic
   - visualizations
   - classification
+author: Jocelyn Ong
 ---
 <!-- Create a report of your findings and detail the accuracy and assumptions of your model -->
 Can we predict who will survive a disaster?

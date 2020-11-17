@@ -8,6 +8,7 @@ tags:
   - eda
   - visualizations
   - regression
+author: Jocelyn Ong
 ---
 Where in Iowa should we open a liquor store?
 

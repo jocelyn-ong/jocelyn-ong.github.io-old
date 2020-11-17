@@ -7,6 +7,7 @@ tags:
   - sat
   - eda
   - visualizations
+author: Jocelyn Ong
 ---
 Using Python, its various libraries, and Tableau, we conduct a basic exploratory analysis of SAT scores in the United States.
 

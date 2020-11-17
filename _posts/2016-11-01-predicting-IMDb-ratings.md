@@ -8,6 +8,7 @@ tags:
   - classification
   - imdb
   - web-scraping
+author: Jocelyn Ong
 ---
 What affects the rating of a movie on IMDb?
 

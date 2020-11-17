@@ -4,6 +4,7 @@ tags:
   - thoughts
   - data-science
   - computer-vision
+author: Jocelyn Ong
 ---
 Where I am now in my data science journey
 

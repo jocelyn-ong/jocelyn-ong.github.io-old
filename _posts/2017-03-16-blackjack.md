@@ -4,6 +4,7 @@ tags:
   - data-science
   - python
   - blackjack
+author: Jocelyn Ong
 ---
 Blackjack - An initial look at the game
 

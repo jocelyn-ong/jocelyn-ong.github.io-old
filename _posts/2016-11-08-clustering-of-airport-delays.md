@@ -10,6 +10,7 @@ tags:
   - scipy
   - clustering
   - unsupervised-learning
+author: Jocelyn Ong
 ---
 Running principal component analysis and clustering algorithms on airport delays, cancellations and diversions.
 
