@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : *name
-  avatar           : "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAl9AAAAJDg3MTA4MmNhLTYxYTctNDQ5ZC1hOGZiLThjYzY0OTczNWVmNw.jpg"
+  avatar           : # "/images/profile.jpg"
   bio              : "Data Science // <br>Machine Learning // <br>Data Visualization // <br>Hello, I speak Data!"
   location         : "Singapore"
   email            : "ongjoce@gmail.com"
@@ -97,7 +97,7 @@ author:
   linkedin         : "jocelyn-ong-wj"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  stackoverflow    : "5109099/jocelyn-ong" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
   twitter          : "joce_ong"
