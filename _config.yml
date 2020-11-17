@@ -17,4 +17,10 @@ author:
     - label: "Email"
       icon: "fab fa-fw fa-instagram"
       url: "https://mailto:ongjoce@gmail.com"
-
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
