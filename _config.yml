@@ -2,7 +2,7 @@ theme: jekyll-theme-minimal
 author:
   name     : "Jocelyn Ong"
   avatar   : "/images/profile.jpg"
-  bio      : "My awesome biography constrained to a sentence or two goes here."
+  bio      : ""
   location : "Singapore"
   links:
     - label: "LinkedIn"
