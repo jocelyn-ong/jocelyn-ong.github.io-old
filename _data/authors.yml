@@ -1,0 +1,14 @@
+Jocelyn Ong:
+  name        : "Jocelyn Ong"
+  bio         : "Data Science // <br>Machine Learning // <br>Data Visualization // <br>Hello, I speak Data!"
+  avatar      : "/images/profile.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ongjoce@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/jocelyn-ong-wj/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/joce_ong"
