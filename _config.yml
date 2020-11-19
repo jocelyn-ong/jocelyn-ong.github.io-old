@@ -1,22 +1,22 @@
 theme: jekyll-theme-minimal
+
+# Site Author
 author:
-  name     : "Jocelyn Ong"
-  avatar   : "/images/profile.jpg"
-  bio      : ""
-  location : "Singapore"
+  name             : "Jocelyn Ong"
+  avatar           : "/images/profile.jpg"
+  bio              : ""
+  location         : "Singapore"
+  email            :
   links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jocelyn-ong-wj/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/joce_ong"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ongjoce@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jocelyn-ong"
-    - label: "Email"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://mailto:ongjoce@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jocelyn-ong-wj/"
 
 # Defaults
 defaults:
@@ -25,9 +25,9 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: default
+      layout: single
       author_profile: true
-      read_time: # true
+      read_time: #true
       comments: # true
-      share: # true
-      related: # true
+      share: #true
+      related: #true
